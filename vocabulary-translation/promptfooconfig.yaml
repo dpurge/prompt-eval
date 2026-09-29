@@ -9,11 +9,6 @@ providers:
     config:
       think: false
 
-# defaultTest:
-#   assert:
-#     - type: javascript
-#       value: file://assertions/validate-translation.js
-
 defaultTest:
   assert:
     - type: is-json
@@ -31,6 +26,9 @@ defaultTest:
             type: string
           notes:
             type: [string, 'null']
+    
+    - type: javascript
+      value: file://assertions/validate-translation.js
 
 tests:
   - file://generate-tests.js
