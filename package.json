@@ -1,0 +1,15 @@
+{
+  "name": "prompt-eval",
+  "version": "1.0.0",
+  "description": "Evaluate models using promptfoo",
+  "private": true,
+  "scripts": {
+    "vocabulary-translation": "promptfoo eval -c vocabulary-translation/promptfooconfig.yaml",
+    "view": "promptfoo view"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "promptfoo": "^0.123.1",
+    "yaml": "^2.9.1"
+  }
+}

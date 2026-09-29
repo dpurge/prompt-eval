@@ -1,0 +1,18 @@
+- id: cmn-pol-001
+  phrase: 名字
+  grammar: N
+  transcription: míngzi
+  translation: imię
+  notes: 
+- id: cmn-pol-002
+  phrase: 学生
+  grammar: N
+  transcription: xuéshēng
+  translation: uczeń
+  notes:
+- id: cmn-pol-003
+  phrase: 开始
+  grammar: V
+  transcription: kāishǐ
+  translation: zaczynać
+  notes:

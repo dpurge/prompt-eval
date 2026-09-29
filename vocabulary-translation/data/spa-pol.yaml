@@ -1,0 +1,18 @@
+- id: spa-pol-001
+  phrase: la calle
+  grammar: N f
+  transcription: 
+  translation: ulica
+  notes:
+- id: spa-pol-002
+  phrase: el restaurante
+  grammar: N m
+  transcription: 
+  translation: restauracja
+  notes:
+- id: spa-pol-003
+  phrase: comprender
+  grammar: V
+  transcription: 
+  translation: rozumieć
+  notes:

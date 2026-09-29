@@ -1,0 +1,18 @@
+- id: deu-pol-001
+  phrase: der Koffer
+  grammar: N m
+  transcription: 
+  translation: walizka
+  notes: 
+- id: deu-pol-002
+  phrase: die Lektion
+  grammar: N f
+  transcription: 
+  translation: lekcja
+  notes:
+- id: deu-pol-003
+  phrase: bestellen
+  grammar: V
+  transcription: 
+  translation: zamawiać
+  notes:

@@ -1,0 +1,36 @@
+description: Vocabulary translation
+
+prompts:
+  - file://prompts/system.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+
+# defaultTest:
+#   assert:
+#     - type: javascript
+#       value: file://assertions/validate-translation.js
+
+defaultTest:
+  assert:
+    - type: is-json
+      value:
+        type: object
+        required: [phrase, translation]
+        properties:
+          phrase:
+            type: string
+          grammar:
+            type: [string, 'null']
+          transcription:
+            type: [string, 'null']
+          translation:
+            type: string
+          notes:
+            type: [string, 'null']
+
+tests:
+  - file://generate-tests.js
