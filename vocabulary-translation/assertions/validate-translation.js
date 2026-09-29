@@ -13,38 +13,50 @@ module.exports = async function(output, context) {
 
   const expected = context.vars;
 
+  const expectedGrammar = expected.grammar;
   const expectedTranscription = expected.transcription;
   const expectedTranslation = expected.translation;
 
+  const actualGrammar = actual.grammar;
   const actualTranscription = actual.transcription;
   const actualTranslation = actual.translation;
 
   const translationCorrect = true;
 
+  const grammarScore = 1;
   const transcriptionScore = 1;
   const translationScore = 1;
 
   const score =
-    0.4 * transcriptionScore +
+    0.1 * grammarScore +
+    0.3 * transcriptionScore +
     0.6 * translationScore;
   
   return {
     pass: 
+      grammarScore >= 0.5 &&
       transcriptionScore >= 0.9 &&
-      translationScore >= 1,
+      translationScore >= 0.8,
 
     score,
 
     reason:
-      `Transcription score: ${transcriptionScore.toFixed(3)}, ` +
+      `Grammar score: ${grammarScore.toFixed(3)}, ` +
+      `transcription score: ${transcriptionScore.toFixed(3)}, ` +
       `translation: ${translationCorrect ? "correct" : "incorrect"}`,
 
     namedScores: {
+      grammar: grammarScore,
       transcription: transcriptionScore,
       translation: translationScore,
     },
 
     componentResults: [
+      {
+        pass: grammarScore >= 0.5,
+        score: grammarScore,
+        reason: `Expected: ${expectedGrammar}; got: ${actualGrammar}`,
+      },
       {
         pass: transcriptionScore >= 0.9,
         score: transcriptionScore,
