@@ -23,6 +23,13 @@ const DATA_MAP = {
   },
 };
 
+// readSection returns a prompt section file's text, or "" when the language
+// has none — phraseforge renders a missing section as "" too.
+function readSection(promptDir, file) {
+  if (!file) return "";
+  return fs.readFileSync(path.join(promptDir, file), 'utf8').replace(/\r\n/g, '\n');
+}
+
 module.exports = async function () {
   const dataDir = path.join(__dirname, 'data');
   const promptDir = path.join(__dirname, 'prompts');
@@ -37,8 +44,10 @@ module.exports = async function () {
 
     const sourceLanguage = cfg['sourceLanguage'];
     const targetLanguage = cfg['targetLanguage'];
-    const grammarPrompt = cfg['grammarPrompt'] ? fs.readFileSync(path.join(promptDir, cfg['grammarPrompt']), 'utf8') : "";
-    const transcriptionPrompt = cfg['transcriptionPrompt'] ? fs.readFileSync(path.join(promptDir, cfg['transcriptionPrompt']), 'utf8') : "";
+    // Sections are rendered exactly as phraseforge stores them (Admin > LLM >
+    // Language sections keeps LF line endings), so normalize CRLF here.
+    const grammarPrompt = readSection(promptDir, cfg['grammarPrompt']);
+    const transcriptionPrompt = readSection(promptDir, cfg['transcriptionPrompt']);
 
     const rows = yaml.parse(
       fs.readFileSync(path.join(dataDir, file), 'utf8')

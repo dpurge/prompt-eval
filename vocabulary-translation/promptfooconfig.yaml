@@ -8,11 +8,11 @@ providers:
     label: ollama-gemma4-12b
     config:
       think: false
-
-defaultTest:
-  assert:
-    - type: is-json
-      value:
+      # Same as phraseforge: the reply schema is sent as Ollama's "format"
+      # (structured output), and the is-json assertion below checks the
+      # same schema (YAML anchor, defined once). It equals phraseforge's
+      # ai.VocabularyItemSchema.
+      format: &itemSchema
         type: object
         required: [phrase, translation]
         properties:
@@ -26,7 +26,12 @@ defaultTest:
             type: string
           notes:
             type: [string, 'null']
-    
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *itemSchema
+
     - type: javascript
       value: file://assertions/validate-translation.js
 

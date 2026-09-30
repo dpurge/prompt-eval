@@ -4,7 +4,7 @@ Return ONLY valid JSON without code fence, do not add explanations:
 
 {
   "phrase": "repeat the original phrase",
-  "grammar": "grammar tags attached to the translated phrase, follow the description below; empty if unsure",
+  "grammar": "grammar tags attached to the original phrase, follow the description below; empty if unsure",
   "transcription": "only include if transcription described below, otherwise empty",
   "translation": "translation of the phrase into the specified language",
   "notes": "usually empty, only used if translation requires clarification"
