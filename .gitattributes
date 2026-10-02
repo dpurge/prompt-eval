@@ -1,0 +1,5 @@
+# keep the prompts byte-identical to what phraseforge sends (LF), whatever the platform
+*/prompts/system.txt text eol=lf
+correction/conversation.txt text eol=lf
+generate/prompts/*.txt text eol=lf
+generate/conversation.txt text eol=lf

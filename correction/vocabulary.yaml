@@ -1,0 +1,40 @@
+description: Correction round trip, vocabulary items
+
+# phraseforge sends a reply that fails validation back to the model: the
+# original prompt, the rejected reply, then the exact error (see
+# lib/correction.js). Each test is one such conversation; it passes when the
+# model's corrected reply passes the structure checks.
+prompts:
+  - file://conversation.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      # Equals phraseforge's ai.VocabularyItemSchema (npm run check-sync verifies).
+      format: &itemSchema
+        type: object
+        required: [phrase, translation]
+        properties:
+          phrase:
+            type: string
+          grammar:
+            type: [string, 'null']
+          transcription:
+            type: [string, 'null']
+          translation:
+            type: string
+          notes:
+            type: [string, 'null']
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *itemSchema
+
+    - type: javascript
+      value: file://../lib/promptfoo-assert.js
+
+tests:
+  - file://vocabulary-tests.js

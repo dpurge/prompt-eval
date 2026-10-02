@@ -1,0 +1,43 @@
+# Models items are short sentence patterns with a gap, which invites the
+# model to "tidy" the gap (... -> …) when echoing the phrase back. Same
+# structure-only checks as phrase-robustness.yaml.
+- id: deu-p01
+  language: deu
+  category: pattern
+  phrase: "Ich möchte ... bestellen"
+  smoke: true
+- id: deu-p02
+  language: deu
+  category: pattern
+  phrase: "Wie viel kostet ...?"
+- id: deu-p03
+  language: deu
+  category: pattern
+  # single ellipsis character
+  phrase: "Es gibt …"
+- id: spa-p01
+  language: spa
+  category: pattern
+  phrase: "Me gustaría ..."
+  smoke: true
+- id: spa-p02
+  language: spa
+  category: pattern
+  phrase: "¿Dónde está ...?"
+- id: spa-p03
+  language: spa
+  category: pattern
+  phrase: "Hay …"
+- id: cmn-p01
+  language: cmn
+  category: pattern
+  phrase: "我想……"
+  smoke: true
+- id: cmn-p02
+  language: cmn
+  category: pattern
+  phrase: "请问……在哪里？"
+- id: cmn-p03
+  language: cmn
+  category: pattern
+  phrase: "我是……人"

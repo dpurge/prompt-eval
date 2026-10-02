@@ -1,0 +1,23 @@
+description: Generate purpose, generate_vocabulary
+
+# Same call shape as ai.Service.Generate: a system message (generate/prompts/
+# generateVocabulary.txt, the prompt prod runs, synced from the Helm values by
+# scripts/sync-prompts.js) and a user message with Source/Target language and
+# Content type. num_ctx equals the purpose's numCtx (npm run check-sync verifies).
+prompts:
+  - file://conversation.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      num_ctx: 8192
+
+defaultTest:
+  assert:
+    - type: javascript
+      value: file://../lib/promptfoo-generate-assert.js
+
+tests:
+  - file://generateVocabulary-tests.js

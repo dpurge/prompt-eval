@@ -1,0 +1,26 @@
+# ai.Service.Generate "transcription" calls: Source language is the language
+# code, Target language is the fixed sentinel "transcription", content type
+# text. reference is the expected pinyin; the check is similarity >= 0.8 on
+# letters only (tone marks, spaces and punctuation ignored), plus: no Chinese
+# characters left and the same number of lines.
+- id: cmn-greeting
+  language: cmn
+  target: transcription
+  smoke: true
+  content: 你好，我叫小明。
+  reference: Nǐ hǎo, wǒ jiào Xiǎomíng.
+- id: cmn-two-lines
+  language: cmn
+  target: transcription
+  smoke: true
+  content: |-
+    我想点一杯咖啡。
+    学生在学校学习。
+  reference: |-
+    Wǒ xiǎng diǎn yī bēi kāfēi.
+    Xuéshēng zài xuéxiào xuéxí.
+- id: cmn-weather
+  language: cmn
+  target: transcription
+  content: 今天天气很好。
+  reference: Jīntiān tiānqì hěn hǎo.

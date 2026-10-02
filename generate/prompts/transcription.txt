@@ -1,0 +1,3 @@
+Create a romanized transcription for the source language content.
+Return only the transcription, preserving line breaks and structure.
+Do not add explanations.

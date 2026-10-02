@@ -1,0 +1,26 @@
+# ai.Service.Generate "generate_vocabulary" calls (phraseforge/internal/
+# generate): Source language is the language code, Target language the
+# sentinel "generate_vocabulary" (so the translation language is up to the
+# model), content type text. Checks: every line is "phrase {grammar}
+# [transcription] = translation" with optional parts, no numbering, at least
+# minItems lines, most phrases occur in the text.
+- id: deu-cafe
+  language: deu
+  target: generate_vocabulary
+  smoke: true
+  content: |-
+    Ich möchte einen Kaffee bestellen. Der Koffer ist schwer. Die Lektion beginnt um acht Uhr. Wir lernen jeden Tag neue Wörter.
+  minItems: 4
+- id: spa-restaurant
+  language: spa
+  target: generate_vocabulary
+  content: |-
+    El restaurante está en la calle principal. Quiero un café, por favor. Los clientes pidieron paella y agua.
+  minItems: 4
+- id: cmn-school
+  language: cmn
+  target: generate_vocabulary
+  smoke: true
+  content: |-
+    我想点一杯咖啡。学生在学校学习。今天天气很好。
+  minItems: 4

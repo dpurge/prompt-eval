@@ -1,0 +1,19 @@
+# ai.Service.Generate "title" calls: Source language is the language code,
+# Target language the fixed sentinel "title", content type text. The checks
+# are about form only (one line, no quotes, no trailing punctuation, short).
+- id: deu-weather
+  language: deu
+  target: title
+  smoke: true
+  content: Das Wetter in Berlin war gestern sehr schön. Viele Menschen gingen im Park spazieren und tranken Kaffee. Am Abend regnete es jedoch plötzlich.
+- id: spa-restaurant-quote
+  language: spa
+  target: title
+  smoke: true
+  # the text itself contains a quotation, which a title must not copy as wrapping quotes
+  content: 'El restaurante de la calle principal abrió ayer. Muchos clientes pidieron paella y café. El dueño dijo que "la comida es la mejor del barrio".'
+- id: cmn-weather
+  language: cmn
+  target: title
+  smoke: true
+  content: 昨天北京的天气很好。很多人在公园里散步、喝咖啡。晚上突然下雨了。

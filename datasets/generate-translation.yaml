@@ -1,0 +1,51 @@
+# ai.Service.Generate "translation" calls: Source language is the language
+# code, Target language the site locale code (pl, en), content type text.
+# contains: every group needs one of its alternatives in the reply (accents
+# and case ignored) — a deliberately loose check that the translation is in
+# the target language and keeps the meaning. Multi-line content must keep its
+# line count ("preserving line breaks and structure").
+- id: deu-pl
+  language: deu
+  target: pl
+  smoke: true
+  content: |-
+    Ich möchte einen Kaffee bestellen.
+    Die Lektion beginnt um acht Uhr.
+  contains: [["kaw"], ["lekcj"]]
+- id: deu-en
+  language: deu
+  target: en
+  content: |-
+    Ich möchte einen Kaffee bestellen.
+    Die Lektion beginnt um acht Uhr.
+  contains: [["coffee"], ["lesson", "class"]]
+- id: spa-pl
+  language: spa
+  target: pl
+  smoke: true
+  content: |-
+    Quiero un café, por favor.
+    El restaurante está en la calle principal.
+  contains: [["kaw"], ["restaurac"], ["ulic"]]
+- id: spa-en
+  language: spa
+  target: en
+  content: |-
+    Quiero un café, por favor.
+    El restaurante está en la calle principal.
+  contains: [["coffee"], ["restaurant"], ["street"]]
+- id: cmn-pl
+  language: cmn
+  target: pl
+  smoke: true
+  content: |-
+    我想点一杯咖啡。
+    学生在学校学习。
+  contains: [["kaw"], ["student", "uczeń", "uczni", "uczy"], ["szkol"]]
+- id: cmn-en
+  language: cmn
+  target: en
+  content: |-
+    我想点一杯咖啡。
+    学生在学校学习。
+  contains: [["coffee"], ["student"], ["school"]]

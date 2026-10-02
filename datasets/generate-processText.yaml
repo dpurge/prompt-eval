@@ -1,0 +1,61 @@
+# ai.Service.Generate "process_text" calls on raw extracted page text: Source
+# language is the language code, Target language the sentinel "process_text",
+# content type text. keep = sentences that must survive, drop = page
+# boilerplate that must go, forbid = patterns the reply must not contain.
+- id: deu-news
+  language: deu
+  target: process_text
+  smoke: true
+  content: |-
+    Startseite | Nachrichten | Sport | Kontakt
+    Cookie-Einstellungen akzeptieren
+    Berlin eröffnet neue Bibliothek
+    Die Stadt Berlin hat gestern eine neue Bibliothek eröffnet. Sie bietet Platz für mehr als 100.000 Bücher.
+    Viele Besucher kamen schon am ersten Tag und lasen im Garten.
+    Newsletter abonnieren
+    Teilen auf Facebook
+    © 2026 Beispiel-Zeitung
+  keep: ["neue Bibliothek eröffnet", "100.000 Bücher", "lasen im Garten"]
+  drop: ["Cookie", "Newsletter", "Facebook", "©", "Startseite"]
+- id: spa-news
+  language: spa
+  target: process_text
+  content: |-
+    Inicio | Noticias | Deportes | Contacto
+    Aceptar cookies
+    Abre un nuevo mercado en el centro
+    El ayuntamiento abrió ayer un nuevo mercado en el centro de la ciudad. Hay más de cincuenta puestos de fruta y verdura.
+    Muchos vecinos fueron a comprar desde la mañana.
+    Suscríbete a nuestro boletín
+    Compartir en Twitter
+    Todos los derechos reservados
+  keep: ["nuevo mercado en el centro", "cincuenta puestos", "vecinos fueron a comprar"]
+  drop: ["cookies", "boletín", "Twitter", "derechos reservados", "Inicio"]
+- id: cmn-news
+  language: cmn
+  target: process_text
+  content: |-
+    首页 | 新闻 | 体育 | 联系我们
+    接受 Cookie
+    城市公园新开了一座图书馆
+    昨天，城市公园新开了一座图书馆。这里可以放十万本书。
+    很多人第一天就来了，坐在花园里看书。
+    订阅我们的通讯
+    分享到微博
+    版权所有
+  keep: ["新开了一座图书馆", "十万本书", "坐在花园里看书"]
+  drop: ["Cookie", "订阅", "微博", "版权所有", "首页"]
+- id: spa-mid-article-chunk
+  language: spa
+  target: process_text
+  smoke: true
+  # a chunk that starts mid-sentence and has no heading, as produced by the
+  # chunked ingest: it must be cleaned like any other text, not dropped as
+  # boilerplate, and must not gain an invented heading
+  content: |-
+    y por eso los vecinos decidieron plantar árboles en la plaza.
+
+    El alcalde agradeció la ayuda de todos y prometió más parques.
+  keep: ["vecinos decidieron plantar árboles", "alcalde agradeció la ayuda"]
+  drop: []
+  forbid: ["^#"]

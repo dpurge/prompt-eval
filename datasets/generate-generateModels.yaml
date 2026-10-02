@@ -1,0 +1,25 @@
+# ai.Service.Generate "generate_models" calls: Source language is the language
+# code, Target language the sentinel "generate_models", content type text.
+# Checks: lines are "phrase [transcription] = translation", no {grammar}, at
+# least minItems lines, at least half share a word with the text, and the
+# phrases get progressively longer (the prompt asks for it).
+- id: deu-cafe
+  language: deu
+  target: generate_models
+  smoke: true
+  content: |-
+    Ich möchte einen Kaffee bestellen. Die Lektion beginnt um acht Uhr. Wir lernen jeden Tag neue Wörter.
+  minItems: 3
+- id: spa-restaurant
+  language: spa
+  target: generate_models
+  content: |-
+    Quiero un café, por favor. El restaurante está en la calle principal. Los clientes pidieron paella y agua.
+  minItems: 3
+- id: cmn-school
+  language: cmn
+  target: generate_models
+  smoke: true
+  content: |-
+    我想点一杯咖啡。学生在学校学习。今天天气很好。
+  minItems: 3

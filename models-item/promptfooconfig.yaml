@@ -1,0 +1,35 @@
+description: Models item translation
+
+# Same call shape as phraseforge's generate_models_item job: one user
+# message (prompts/system.txt, synced from config.go's DefaultModelsItemPrompt
+# by scripts/sync-prompts.js), the reply schema sent as Ollama's "format".
+prompts:
+  - file://prompts/system.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      # Equals phraseforge's ai.ModelsItemSchema (npm run check-sync verifies).
+      format: &itemSchema
+        type: object
+        required: [phrase, translation]
+        properties:
+          phrase:
+            type: string
+          transcription:
+            type: [string, 'null']
+          translation:
+            type: string
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *itemSchema
+
+    - type: javascript
+      value: file://../lib/promptfoo-assert.js
+
+tests:
+  - file://generate-tests.js

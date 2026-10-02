@@ -1,0 +1,38 @@
+# ai.Service.Generate "process_dialog" calls: Source language is the language
+# code, Target language the sentinel "process_dialog", content type dialog.
+# turns = how many lines the cleaned dialog must have (one per turn).
+- id: deu-merged-turns
+  language: deu
+  target: process_dialog
+  contentType: dialog
+  smoke: true
+  content: |-
+    Impressum | Datenschutz
+    Kellnerin: Guten Tag! Was möchten Sie trinken? Gast: Einen Kaffee, bitte. Kellnerin: Gern. Mit Milch? Gast: Nein, danke. Schwarz.
+    Werbung: Jetzt Tickets kaufen!
+  turns: 4
+  keep: ["Was möchten Sie trinken", "Einen Kaffee, bitte", "Mit Milch", "Schwarz"]
+  drop: ["Impressum", "Datenschutz", "Tickets"]
+- id: spa-dashes
+  language: spa
+  target: process_dialog
+  contentType: dialog
+  content: |-
+    Menú | Contacto
+    —Buenas tardes. ¿Qué desea? —Un café con leche, por favor. —Enseguida.
+    Síguenos en Instagram
+  turns: 3
+  keep: ["Qué desea", "café con leche", "Enseguida"]
+  drop: ["Menú", "Instagram"]
+- id: cmn-labels
+  language: cmn
+  target: process_dialog
+  contentType: dialog
+  smoke: true
+  content: |-
+    首页 | 联系我们
+    甲：你好！乙：你好，请坐。甲：谢谢。
+    广告：点击购买
+  turns: 3
+  keep: ["你好", "请坐", "谢谢"]
+  drop: ["首页", "广告", "点击购买"]
