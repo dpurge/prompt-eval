@@ -24,3 +24,47 @@
   target: transcription
   content: 今天天气很好。
   reference: Jīntiān tiānqì hěn hǎo.
+- id: arb-excerpt
+  language: arb
+  target: transcription
+  smoke: true
+  content: |-
+    كنت في حالة من الإحباط، أغرق في دوامة من عدم اليقين. لكنني اتخذت في أعماقي قراراً، لن تكون هذه النهاية، مهما اشتدت الصعوبات.
+  reference: |-
+    Kuntu fī ḥāla min al-iḥbāṭ, aġraqu fī dawwāma min ʿadam al-yaqīn. Lākinnanī ittaḫaḏtu fī aʿmāqī qarāran, lan takūna hāḏihi n-nihāya, mahmā ištaddat aṣ-ṣuʿūbāt.
+- id: fas-excerpt
+  language: fas
+  target: transcription
+  content: |-
+    شرکت نفتی آرامکو در عربستان سعودی اعلام کرده است که سود این شرکت در سه‌ماههٔ دوم سال ۲۰۲۶ بسیار زیاد شد. این خبر هم‌زمان با تنش‌ها در منطقه و اختلال در کشتیرانی خلیج فارس منتشر شد.
+  reference: |-
+    Šerkat-e naftī-ye Ārāmkū dar ʿArabestān-e Saʿūdī eʿlām karde ast ke sūd-e īn šerkat dar se-māhe-ye dovvom-e sāl-e 2026 besyār zīyād šod. Īn xabar ham-zamān bā taneš-hā dar manteqe va extelāl dar keštīrānī-ye Xalīj-e Fārs montašer šod.
+- id: heb-excerpt
+  language: heb
+  target: transcription
+  content: |-
+    בַּבַּיִת יֵשׁ חֶדֶר. הַחֶדֶר בַּבַּיִת.
+  reference: |-
+    Babayit yeš ḥeder. Haḥeder babayit.
+- id: heb-unpointed
+  language: heb
+  target: transcription
+  content: |-
+    בבית יש חדר. החדר בבית.
+  reference: |-
+    Babayit yeš ḥeder. Haḥeder babayit.
+- id: jpn-excerpt
+  language: jpn
+  target: transcription
+  smoke: true
+  content: |-
+    コーヒーを注文したいです。授業は八時に始まります。
+  reference: |-
+    Kōhī o chūmon shitai desu. Jugyō wa hachiji ni hajimarimasu.
+- id: yid-excerpt
+  language: yid
+  target: transcription
+  content: |-
+    איך גיי אַהיים. דער הונט איז קליין.
+  reference: |-
+    Ikh gey aheym. Der hunt iz kleyn.

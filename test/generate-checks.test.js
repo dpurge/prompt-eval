@@ -25,9 +25,16 @@ test("translation: accents and case are ignored when matching expected words", (
 
 const transcriptionVars = { content: "你好，我叫小明。", reference: "Nǐ hǎo, wǒ jiào Xiǎomíng." };
 
-test("transcription: pinyin close to the reference passes; tone marks and punctuation are ignored", () => {
+test("transcription: pinyin with its tone marks and capitals passes; without them it does not", () => {
   assert.equal(checkGenerate("transcription", "Nǐ hǎo, wǒ jiào Xiǎomíng.", transcriptionVars).pass, true);
-  assert.equal(checkGenerate("transcription", "ni hao wo jiao xiaoming", transcriptionVars).pass, true);
+  const flat = checkGenerate("transcription", "ni hao wo jiao xiaoming", transcriptionVars);
+  assert.equal(flat.pass, false);
+  assert.match(flat.reason, /diacriticsAndCase/);
+  assert.match(flat.reason, /sentenceCapitals/);
+});
+
+test("transcription: Chinese punctuation is not Latin punctuation", () => {
+  assert.match(checkGenerate("transcription", "Nǐ hǎo， wǒ jiào Xiǎomíng。", transcriptionVars).reason, /romanized/);
 });
 
 test("transcription: leftover Chinese characters, the wrong text and extra lines fail", () => {

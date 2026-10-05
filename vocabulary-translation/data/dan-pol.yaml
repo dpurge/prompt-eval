@@ -1,0 +1,24 @@
+- id: dan-pol-001
+  phrase: en hund
+  grammar: N c
+  transcription: 
+  translation: pies
+  notes:
+- id: dan-pol-002
+  phrase: et hus
+  grammar: N n
+  transcription: 
+  translation: dom
+  notes:
+- id: dan-pol-003
+  phrase: tale
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: dan-pol-004
+  phrase: lille
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

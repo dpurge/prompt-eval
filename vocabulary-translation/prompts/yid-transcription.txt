@@ -1,0 +1,8 @@
+Transcribe using YIVO romanization, as standard Eastern Yiddish is pronounced.
+
+- Digraphs first: וו v, וי oy, יי ey, ײַ ay, זש zh, טש tsh, דזש dzh.
+- Letters: בּ b, ב v, ג g, ד d, ה h, ז z, ח kh, ט t, כ kh, כּ k, ל l, מ m, נ n, ס s, ע e, פּ p, פ f, צ ts, ק k, ר r, שׁ sh, שׂ s, תּ t, ת s; final forms ם ן ף ץ ך read like their base letters.
+- Vowels: אַ a, אָ o, ו and וּ u, ע e; yud is y before a vowel and i elsewhere. A bare shtumer alef is silent.
+- Write the pronunciation, not the spelling, and never double a consonant.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

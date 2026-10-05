@@ -16,3 +16,15 @@
   transcription: 
   translation: rozumieć
   notes:
+- id: spa-pol-004
+  phrase: hablar
+  grammar: V ar
+  transcription: 
+  translation: mówić
+  notes:
+- id: spa-pol-005
+  phrase: el trabajador
+  grammar: N m
+  transcription: 
+  translation: pracownik
+  notes:

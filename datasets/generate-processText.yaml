@@ -59,3 +59,77 @@
   keep: ["vecinos decidieron plantar árboles", "alcalde agradeció la ayuda"]
   drop: []
   forbid: ["^#"]
+- id: arb-lesson-page
+  language: arb
+  target: process_text
+  smoke: true
+  # an introduction before the text and questions after it are not part of it
+  content: |-
+    الرئيسية | دروس | اتصل بنا
+    الدرس الثالث: القراءة
+    في هذا الدرس ستقرأ نصاً قصيراً عن المكتبة وتتعلم كلمات جديدة.
+    قبل القراءة: هل تحب المكتبات؟
+    افتتحت المدينة مكتبة جديدة أمس. تتسع المكتبة لأكثر من مئة ألف كتاب.
+    جاء كثير من الزوار في اليوم الأول.
+    أسئلة الفهم:
+    ١. متى افتتحت المكتبة؟
+    ٢. كم كتاباً تتسع؟
+    اقرأ أيضاً: مدن عربية
+  keep: ["افتتحت المدينة مكتبة جديدة", "مئة ألف كتاب", "كثير من الزوار"]
+  drop: ["الرئيسية", "في هذا الدرس", "قبل القراءة", "أسئلة الفهم", "متى افتتحت", "اقرأ أيضاً"]
+- id: deu-lesson-page
+  language: deu
+  target: process_text
+  smoke: true
+  # an introduction before the text and questions after it are not part of it
+  content: |-
+    Startseite | Lektionen | Impressum
+    Lektion 3: Lesen
+    In dieser Lektion lesen Sie einen kurzen Text über eine Bibliothek und lernen neue Wörter.
+    Vor dem Lesen: Gehen Sie gern in die Bibliothek?
+    Berlin eröffnet neue Bibliothek
+    Die Stadt Berlin hat gestern eine neue Bibliothek eröffnet. Sie bietet Platz für mehr als 100.000 Bücher.
+    Viele Besucher kamen schon am ersten Tag und lasen im Garten.
+    Fragen zum Text:
+    1. Wann wurde die Bibliothek eröffnet?
+    2. Wie viele Bücher passen hinein?
+    Lesen Sie auch: Bibliotheken in Europa
+    © 2026 Beispiel-Schule
+  keep: ["neue Bibliothek eröffnet", "100.000 Bücher", "lasen im Garten"]
+  drop: ["In dieser Lektion", "Vor dem Lesen", "Fragen zum Text", "Wann wurde", "Lesen Sie auch", "Startseite", "©"]
+- id: spa-lesson-page
+  language: spa
+  target: process_text
+  # an introduction before the text and questions after it are not part of it
+  content: |-
+    Inicio | Lecciones | Contacto
+    Lección 3: Lectura
+    En esta lección leerás un texto corto sobre un mercado y aprenderás palabras nuevas.
+    Antes de leer: ¿Te gusta ir al mercado?
+    Abre un nuevo mercado en el centro
+    El ayuntamiento abrió ayer un nuevo mercado en el centro de la ciudad. Hay más de cincuenta puestos de fruta y verdura.
+    Muchos vecinos fueron a comprar desde la mañana.
+    Preguntas sobre el texto:
+    1. ¿Cuándo se abrió el mercado?
+    2. ¿Cuántos puestos hay?
+    Lee también: Los mercados de España
+  keep: ["nuevo mercado en el centro", "cincuenta puestos", "vecinos fueron a comprar"]
+  drop: ["En esta lección", "Antes de leer", "Preguntas sobre el texto", "Cuándo se abrió", "Lee también", "Inicio"]
+- id: cmn-lesson-page
+  language: cmn
+  target: process_text
+  # an introduction before the text and questions after it are not part of it
+  content: |-
+    首页 | 课程 | 联系我们
+    第三课：阅读
+    本课你将阅读一篇关于图书馆的短文，并学习新词。
+    读前思考：你喜欢图书馆吗？
+    城市公园新开了一座图书馆
+    昨天，城市公园新开了一座图书馆。这里可以放十万本书。
+    很多人第一天就来了，坐在花园里看书。
+    思考题：
+    1. 图书馆是什么时候开的？
+    2. 可以放多少本书？
+    另请阅读：世界著名图书馆
+  keep: ["新开了一座图书馆", "十万本书", "坐在花园里看书"]
+  drop: ["本课你将", "读前思考", "思考题", "图书馆是什么时候开的", "另请阅读", "首页"]

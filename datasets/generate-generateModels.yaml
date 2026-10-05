@@ -23,3 +23,155 @@
   content: |-
     我想点一杯咖啡。学生在学校学习。今天天气很好。
   minItems: 3
+- id: arb-excerpt
+  language: arb
+  target: generate_models
+  smoke: true
+  content: |-
+    كنت في حالة من الإحباط، أغرق في دوامة من عدم اليقين. لكنني اتخذت في أعماقي قراراً، لن تكون هذه النهاية، مهما اشتدت الصعوبات.
+  minItems: 3
+- id: fas-excerpt
+  language: fas
+  target: generate_models
+  content: |-
+    شرکت نفتی آرامکو در عربستان سعودی اعلام کرده است که سود این شرکت در سه‌ماههٔ دوم سال ۲۰۲۶ بسیار زیاد شد. این خبر هم‌زمان با تنش‌ها در منطقه و اختلال در کشتیرانی خلیج فارس منتشر شد.
+  minItems: 3
+- id: heb-excerpt
+  language: heb
+  target: generate_models
+  content: |-
+    בַּבַּיִת יֵשׁ חֶדֶר. הַחֶדֶר בַּבַּיִת.
+  minItems: 2
+- id: heb-unpointed
+  language: heb
+  target: generate_models
+  content: |-
+    בבית יש חדר. החדר בבית.
+  minItems: 2
+- id: deu-excerpt
+  language: deu
+  target: generate_models
+  content: |-
+    Eine neue Umfrage zeigt, dass sich die politische Stimmung in Deutschland weiter verändert. Die Union verliert im Vergleich zum Vormonat etwas an Zuspruch und liegt jetzt bei 21 Prozent.
+  minItems: 3
+- id: spa-excerpt
+  language: spa
+  target: generate_models
+  content: |-
+    Durante la revolución industrial británica, las nuevas fábricas se enfrentaron a la necesidad de un control horario estricto. Un trabajador que llegaba incluso cinco minutos tarde podía paralizar toda una línea de montaje.
+  minItems: 3
+- id: tur-excerpt
+  language: tur
+  target: generate_models
+  content: |-
+    Türkiye, Suudi Arabistan ve Pakistan Mekke’de ortak bir savunma anlaşması imzaladı. Habere göre bu anlaşma, üç ülke arasında savunma alanında işbirliğini güçlendirmeyi amaçlıyor.
+  minItems: 3
+- id: lat-excerpt
+  language: lat
+  target: generate_models
+  content: |-
+    Ranae aquam amant. Magna rana parvam ranam vituperat.
+  minItems: 2
+- id: ron-excerpt
+  language: ron
+  target: generate_models
+  content: |-
+    Salut! Cum te cheamă? Mă numesc Ana. Dar tu? Eu mă numesc Maria. Încântată de cunoștință!
+  minItems: 2
+- id: fra-excerpt
+  language: fra
+  target: generate_models
+  content: |-
+    Je voudrais commander un café. La leçon commence à huit heures.
+  minItems: 2
+- id: ind-excerpt
+  language: ind
+  target: generate_models
+  content: |-
+    Saya ingin memesan kopi. Pelajaran dimulai pukul delapan.
+  minItems: 2
+- id: vie-excerpt
+  language: vie
+  target: generate_models
+  content: |-
+    Tôi muốn gọi một ly cà phê. Bài học bắt đầu lúc tám giờ.
+  minItems: 2
+- id: kor-excerpt
+  language: kor
+  target: generate_models
+  content: |-
+    저는 커피를 주문하고 싶어요. 수업은 여덟 시에 시작해요.
+  minItems: 2
+- id: jpn-excerpt
+  language: jpn
+  target: generate_models
+  smoke: true
+  content: |-
+    コーヒーを注文したいです。授業は八時に始まります。
+  minItems: 2
+- id: swe-excerpt
+  language: swe
+  target: generate_models
+  content: |-
+    Jag vill beställa en kaffe. Lektionen börjar klockan åtta.
+  minItems: 2
+- id: ukr-excerpt
+  language: ukr
+  target: generate_models
+  content: |-
+    Я хочу замовити каву. Урок починається о восьмій годині.
+  minItems: 2
+- id: swa-excerpt
+  language: swa
+  target: generate_models
+  content: |-
+    Ninataka kuagiza kahawa. Somo linaanza saa mbili.
+  minItems: 2
+- id: fin-excerpt
+  language: fin
+  target: generate_models
+  content: |-
+    Haluaisin tilata kahvin. Oppitunti alkaa kello kahdeksan.
+  minItems: 2
+- id: dan-excerpt
+  language: dan
+  target: generate_models
+  content: |-
+    Jeg vil gerne bestille en kaffe. Lektionen begynder klokken otte.
+  minItems: 2
+- id: nld-excerpt
+  language: nld
+  target: generate_models
+  content: |-
+    Ik wil graag een koffie bestellen. De les begint om acht uur.
+  minItems: 2
+- id: ita-excerpt
+  language: ita
+  target: generate_models
+  content: |-
+    Vorrei ordinare un caffè. La lezione comincia alle otto.
+  minItems: 2
+- id: grc-excerpt
+  language: grc
+  target: generate_models
+  content: |-
+    ὁ παῖς τὸν κύνα ὁρᾷ. ἡ γυνὴ ἐν τῇ οἰκίᾳ μένει.
+  minItems: 2
+- id: ell-excerpt
+  language: ell
+  target: generate_models
+  content: |-
+    Θέλω να παραγγείλω έναν καφέ. Το μάθημα αρχίζει στις οκτώ.
+  minItems: 2
+- id: yid-excerpt
+  language: yid
+  target: generate_models
+  content: |-
+    איך גיי אַהיים. דער הונט איז קליין.
+  minItems: 2
+- id: tgl-excerpt
+  language: tgl
+  target: generate_models
+  content: |-
+    Gusto kong umorder ng kape. Magsisimula ang klase sa alas-otso.
+  minItems: 2

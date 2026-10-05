@@ -1,0 +1,30 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+After noun:
+- Gender (always lower case)
+  m = masculine (דער)
+  f = feminine (די)
+  n = neuter (דאָס)
+
+After verb: nothing (irreg for an irregular verb)
+After adjective: nothing
+
+Examples (phrase -> tags):
+דער הונט -> N m
+דאָס הויז -> N n
+די פרוי -> N f
+רעדן -> V
+זיין -> V irreg
+קליין -> Adj

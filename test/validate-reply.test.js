@@ -40,9 +40,11 @@ test("phrase compares after trim and NFC", () => {
   assert.equal(validateReply(reply({ phrase: `  ${nfd}  `, translation: "dziewczynka" }), { phrase: nfc, structureOnly: true }).pass, true);
 });
 
-test("a wrong translation fails; accents and case are forgiven", () => {
+test("a wrong translation fails; accents are forgiven, but a capitalized word or a final full stop is not (dictionary style)", () => {
   assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "kufer" }), deu).pass, false);
-  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "WALIZKA." }), deu).pass, true);
+  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka" }), deu).pass, true);
+  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "Walizka" }), deu).pass, false);
+  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka." }), deu).pass, false);
 });
 
 test("grammar counts only when the language has a grammar section", () => {
@@ -52,8 +54,12 @@ test("grammar counts only when the language has a grammar section", () => {
 });
 
 test("transcription is scored by similarity >= 0.9 only with a section", () => {
-  const good = validateReply(reply({ phrase: "名字", grammar: "N", transcription: "mingzi", translation: "imię" }), cmn);
+  const good = validateReply(reply({ phrase: "名字", grammar: "N", transcription: "míngzi", translation: "imię" }), cmn);
   assert.equal(good.pass, true);
+  // dropping the tone marks is no longer good enough: diacritics count
+  const noTones = validateReply(reply({ phrase: "名字", grammar: "N", transcription: "mingzi", translation: "imię" }), cmn);
+  assert.equal(noTones.pass, false);
+  assert.match(noTones.reason, /transcriptionStrict/);
   const bad = validateReply(reply({ phrase: "名字", grammar: "N", transcription: "xyz", translation: "imię" }), cmn);
   assert.equal(bad.pass, false);
   const noSection = { ...cmn, transcriptionPrompt: "" };

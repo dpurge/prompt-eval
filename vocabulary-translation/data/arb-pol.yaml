@@ -1,0 +1,30 @@
+- id: arb-pol-001
+  phrase: مُبَرْمِجٌ
+  grammar: N m sg
+  transcription: mubarmiǧ
+  translation: programista
+  notes:
+- id: arb-pol-002
+  phrase: نِهَايَةٌ
+  grammar: N f sg
+  transcription: nihāya
+  translation: koniec
+  notes:
+- id: arb-pol-003
+  phrase: وَاصَلَ
+  grammar: V
+  transcription: wāṣala
+  translation: kontynuować
+  notes:
+- id: arb-pol-004
+  phrase: نَازِحٌ
+  grammar: Adj
+  transcription: nāziḥ
+  translation: wysiedlony
+  notes:
+- id: arb-pol-005
+  phrase: حاسوب محمول
+  grammar: N m sg
+  transcription: ḥāsūb maḥmūl
+  translation: laptop
+  notes:

@@ -1,0 +1,24 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+Finnish has no grammatical gender and no articles: every noun is just N.
+After verb: the type 1 to 6; irreg for an irregular verb
+After adjective: nothing
+
+Examples (phrase -> tags):
+koira -> N
+puhua -> V 1
+nähdä -> V 4 irreg
+olla -> V irreg
+pieni -> Adj

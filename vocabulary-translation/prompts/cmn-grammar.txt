@@ -3,3 +3,21 @@ Grammar tags is an ordered string of space-separated tags:
 Part of speech (always capitalized):
   N = noun
   V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+After noun: the measure word as a Chinese character, only if you are sure of it (never romanized); otherwise nothing
+After verb: nothing (irreg for an irregular verb)
+After adjective: nothing
+
+Examples (phrase -> tags):
+书 -> N 本
+房子 -> N
+说话 -> V
+小 -> Adj

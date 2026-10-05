@@ -1,0 +1,13 @@
+Transcribe using DIN 31635, read the way an Arab reads aloud. Keep every diacritic.
+
+Consonants: ء ʾ, ب b, ت t, ث ṯ, ج ǧ, ح ḥ, خ ḫ, د d, ذ ḏ, ر r, ز z, س s, ش š, ص ṣ, ض ḍ, ط ṭ, ظ ẓ, ع ʿ, غ ġ, ف f, ق q, ك k, ل l, م m, ن n, ه h, و w, ي y.
+Vowels: fatḥa a, kasra i, ḍamma u; long ā, ū, ī (ا ى و ي); alif madda ʾā; shadda doubles the consonant.
+
+Reading rules:
+- Always write the short vowels. Take them from the vocalized text; when the text is not vocalized, give the standard reading of the word as a dictionary gives it. Never skip the transcription because the text has no vowel signs.
+- Drop case endings and tanwīn: كَلْبٌ -> kalb, مَدْرَسَةٌ -> madrasa. Keep the adverbial -an: شُكْراً -> šukran.
+- Sun letters assimilate the article: الشَّمْسُ -> aš-šams; moon letters do not: الْقَمَرُ -> al-qamar.
+- Elide hamzat al-waṣl after a vowel: فِي الْمَدْرَسَةِ -> fī l-madrasa.
+- tāʾ marbūṭa: a in pause, at in a construct: مَدِينَةُ الْقَاهِرَةِ -> madīnat al-Qāhira.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

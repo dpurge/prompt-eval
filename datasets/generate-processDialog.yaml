@@ -36,3 +36,23 @@
   turns: 3
   keep: ["你好", "请坐", "谢谢"]
   drop: ["首页", "广告", "点击购买"]
+- id: deu-lesson-dialog
+  language: deu
+  target: process_dialog
+  contentType: dialog
+  smoke: true
+  # the lesson's instruction before the dialog and the exercise after it are not part of it
+  content: |-
+    Startseite | Dialoge
+    Dialog 2: Im Café
+    Hören Sie den Dialog und sprechen Sie nach.
+    A: Guten Tag, ich möchte einen Kaffee.
+    B: Gern. Mit Milch?
+    A: Ja, bitte.
+    B: Das macht zwei Euro.
+    Übung: Beantworten Sie die Fragen.
+    1. Was bestellt A?
+    Weiterlesen: Dialog 3
+  turns: 4
+  keep: ["ich möchte einen Kaffee", "Mit Milch", "zwei Euro"]
+  drop: ["Startseite", "Hören Sie", "Übung", "Was bestellt", "Weiterlesen"]

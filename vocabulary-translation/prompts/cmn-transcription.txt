@@ -1,1 +1,7 @@
-Transcribe using pinyin.
+Transcribe using Pinyin with tone marks, read the way a Mandarin speaker reads aloud.
+
+- Keep the tone mark on every syllable (ā á ǎ à); the neutral tone has none: 吗 ma, 爸爸 bàba.
+- Write the syllables of one word together and separate words with a space: 北京大学 -> Běijīng Dàxué.
+- Er-hua: 哪儿 -> nǎr (not a separate syllable). Apostrophe before a vowel-initial syllable: 西安 -> Xī'ān.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only: , . ! ? : ; ' " ( )

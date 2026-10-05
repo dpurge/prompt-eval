@@ -1,0 +1,10 @@
+Transcribe using Hepburn romanization, read the way a Japanese speaker reads aloud. Keep the macrons.
+
+- Long vowels are written with a macron, never doubled: とうきょう -> Tōkyō, おかあさん -> okāsan. Keep two vowels only across a morpheme boundary: おにいさん -> oniisan.
+- A small っ doubles the next consonant: きって -> kitte; before ch it is tch: まっちゃ -> matcha.
+- ん is n, and m before b, p, m: しんぶん -> shimbun; before a vowel or y use an apostrophe: しんよう -> shin'yō.
+- The particles は, へ, を are read wa, e, o.
+- Irregular spellings: し shi, ち chi, つ tsu, ふ fu, じ and ぢ ji, づ zu.
+- Write the reading of kanji from the dictionary, word by word, with a space between words.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

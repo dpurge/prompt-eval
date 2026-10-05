@@ -1,0 +1,24 @@
+- id: vie-pol-001
+  phrase: chó
+  grammar: N cl con
+  transcription: 
+  translation: pies
+  notes:
+- id: vie-pol-002
+  phrase: nhà
+  grammar: N cl cái
+  transcription: 
+  translation: dom
+  notes:
+- id: vie-pol-003
+  phrase: nói chuyện
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: vie-pol-004
+  phrase: nhỏ
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

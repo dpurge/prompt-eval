@@ -1,0 +1,24 @@
+- id: grc-pol-001
+  phrase: ὁ κύων, κυνός
+  grammar: N m 3
+  transcription: 
+  translation: pies
+  notes:
+- id: grc-pol-002
+  phrase: ἡ οἰκία, -ας
+  grammar: N f 1
+  transcription: 
+  translation: dom
+  notes:
+- id: grc-pol-003
+  phrase: λέγω
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: grc-pol-004
+  phrase: μικρός
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

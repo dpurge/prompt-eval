@@ -1,0 +1,46 @@
+# Dictionary forms the generateVocabulary reply for a dataset row should
+# contain (id -> groups of alternatives; one alternative per group must be a
+# phrase, accents ignored). The text holds inflected forms; these are the
+# forms a dictionary lists.
+arb-excerpt:
+  - [إحباط, احباط]
+  - [دوامة]
+  - [يقين]
+  - [اتخذ]
+  - [نهاية]
+  - [اشتد]
+deu-excerpt:
+  - [verlieren]
+  - [Umfrage, die Umfrage]
+  - [zeigen]
+  - [verändern, sich verändern]
+spa-excerpt:
+  - [necesidad, la necesidad]
+  - [enfrentarse, enfrentar]
+  - [llegar]
+  - [poder]
+  - [paralizar]
+tur-excerpt:
+  - [imzalamak]
+  - [anlaşma, savunma anlaşması]
+  - [güçlendirmek]
+  - [amaçlamak]
+lat-excerpt:
+  - [rana]
+  - [aqua]
+  - [amare]
+  - [vituperare]
+  - [magnus]
+  - [parvus]
+jpn-excerpt:
+  - [注文する, 注文]
+  - [始まる]
+  - [授業]
+kor-excerpt:
+  - [주문하다]
+  - [시작하다]
+  - [수업]
+fra-excerpt:
+  - [commander]
+  - [commencer]
+  - [leçon, la leçon]

@@ -1,0 +1,18 @@
+- id: swa-pol-001
+  phrase: mtoto
+  grammar: N
+  transcription: 
+  translation: dziecko
+  notes:
+- id: swa-pol-002
+  phrase: kusema
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: swa-pol-003
+  phrase: mkubwa
+  grammar: Adj
+  transcription: 
+  translation: duży
+  notes:

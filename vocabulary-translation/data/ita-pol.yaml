@@ -1,0 +1,24 @@
+- id: ita-pol-001
+  phrase: il cane
+  grammar: N m
+  transcription: 
+  translation: pies
+  notes:
+- id: ita-pol-002
+  phrase: la casa
+  grammar: N f
+  transcription: 
+  translation: dom
+  notes:
+- id: ita-pol-003
+  phrase: parlare
+  grammar: V are
+  transcription: 
+  translation: mówić
+  notes:
+- id: ita-pol-004
+  phrase: piccolo
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

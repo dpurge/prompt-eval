@@ -1,0 +1,24 @@
+- id: ron-pol-001
+  phrase: câine
+  grammar: N m
+  transcription: 
+  translation: pies
+  notes:
+- id: ron-pol-002
+  phrase: casă
+  grammar: N f
+  transcription: 
+  translation: dom
+  notes:
+- id: ron-pol-003
+  phrase: a vorbi
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: ron-pol-004
+  phrase: mic
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

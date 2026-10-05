@@ -1,0 +1,22 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+Korean has no grammatical gender and no articles: every noun is just N.
+After verb: nothing
+After adjective: nothing
+
+Examples (phrase -> tags):
+집 -> N
+말하다 -> V
+작다 -> Adj

@@ -1,0 +1,24 @@
+- id: yid-pol-001
+  phrase: דער הונט
+  grammar: N m
+  transcription: der hunt
+  translation: pies
+  notes:
+- id: yid-pol-002
+  phrase: דאָס הויז
+  grammar: N n
+  transcription: dos hoyz
+  translation: dom
+  notes:
+- id: yid-pol-003
+  phrase: רעדן
+  grammar: V
+  transcription: redn
+  translation: mówić
+  notes:
+- id: yid-pol-004
+  phrase: קליין
+  grammar: Adj
+  transcription: kleyn
+  translation: mały
+  notes:

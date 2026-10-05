@@ -1,0 +1,33 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+After noun:
+- Gender (always lower case)
+  m = masculine
+  f = feminine
+  n = neuter
+- an for an animate masculine noun
+
+After verb:
+  impf = imperfective
+  pf = perfective
+  irreg = irregular
+After adjective: nothing
+
+Examples (phrase -> tags):
+собака -> N f
+будинок -> N m
+говорити -> V impf
+побачити -> V pf
+маленький -> Adj

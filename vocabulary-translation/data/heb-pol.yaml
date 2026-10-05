@@ -1,0 +1,30 @@
+- id: heb-pol-001
+  phrase: חַלּוֹן
+  grammar: N m
+  transcription: ḥalon
+  translation: okno
+  notes:
+- id: heb-pol-002
+  phrase: בַּיִת
+  grammar: N m
+  transcription: bayit
+  translation: dom
+  notes:
+- id: heb-pol-003
+  phrase: שְׁאֵלָה
+  grammar: N f
+  transcription: šeʾela
+  translation: pytanie
+  notes:
+- id: heb-pol-004
+  phrase: דֶּלֶת
+  grammar: N f
+  transcription: delet
+  translation: drzwi
+  notes:
+- id: heb-pol-005
+  phrase: חדר
+  grammar: N m
+  transcription: ḥeder
+  translation: pokój
+  notes:

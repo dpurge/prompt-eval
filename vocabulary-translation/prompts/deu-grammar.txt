@@ -3,11 +3,30 @@ Grammar tags is an ordered string of space-separated tags:
 Part of speech (always capitalized):
   N = noun
   V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
 
 After noun:
 - Gender (always lower case)
   m = masculine
   f = feminine
   n = neuter
+- Number: pl only for a plural form listed on its own
 
-After verb: nothing
+After verb:
+  sep = separable prefix
+  refl = reflexive
+After adjective: nothing
+
+Examples (phrase -> tags):
+der Hund -> N m
+die Bücher -> N n pl
+aufstehen -> V sep
+sich freuen -> V refl
+klein -> Adj

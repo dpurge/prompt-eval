@@ -1,0 +1,11 @@
+Transcribe using DIN 31635 adapted for Persian, read the way a Persian speaker reads aloud. Keep every diacritic.
+
+Persian values (not the Arabic ones): ث ص س -> s; ذ ز ض ظ -> z; ط ت -> t; خ -> x; و -> v as a consonant; ح -> ḥ; ه -> h; ع -> ʿ; ق -> q; ج -> ǧ; ش -> š; چ -> č; ژ -> ž; پ -> p; گ -> g.
+Vowels: short a, e (kasra), o (damma); long ā, ī, ū.
+
+Reading rules:
+- Always write the short vowels. Persian text is normally written without them: give the standard pronunciation of the word as a dictionary gives it. Never skip the transcription.
+- Word-final ه after a consonant is the vowel e: خانه -> xāne; after a long vowel it is h: ماه -> māh.
+- Ezāfe is written -e after a consonant and -ye after a vowel: کتاب کوچک -> ketāb-e kūčak, خانهٔ بزرگ -> xāne-ye bozorg.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

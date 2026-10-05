@@ -1,0 +1,18 @@
+- id: kor-pol-001
+  phrase: 개
+  grammar: N
+  transcription: 
+  translation: pies
+  notes:
+- id: kor-pol-002
+  phrase: 집
+  grammar: N
+  transcription: 
+  translation: dom
+  notes:
+- id: kor-pol-003
+  phrase: 말하다
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:

@@ -1,0 +1,12 @@
+Transcribe using SBL Hebrew in Modern Hebrew pronunciation. Keep every diacritic.
+
+Consonants: א ʾ, ב b/v, ג g, ד d, ה h, ו v, ז z, ח ḥ, ט ṭ, י y, כ k/kh, ל l, מ m, נ n, ס s, ע ʿ, פ p/f, צ ṣ, ק q, ר r, שׁ š, שׂ ś, ת t.
+Vowels: patah and qamats a, segol and tsere e, hiriq i, holam o, qibbuts and shureq u; sheva na ĕ, silent sheva nothing.
+
+Reading rules:
+- Dagesh in ב כ פ gives b, k, p; without it v, kh, f. A dagesh forte doubles the consonant: שַׁבָּת -> šabbat.
+- Do not write a final silent ה as a consonant; consonantal vav is v, never w.
+- The article is ha-.
+- Always write the vowels. Take them from the pointed text; when the text is not pointed (most real texts), give the standard Modern Hebrew pronunciation of the word as a dictionary gives it. Never skip the transcription because the text has no niqqud.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

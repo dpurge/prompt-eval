@@ -1,0 +1,24 @@
+- id: jpn-pol-001
+  phrase: 犬
+  grammar: N
+  transcription: inu
+  translation: pies
+  notes:
+- id: jpn-pol-002
+  phrase: 話す
+  grammar: V 1
+  transcription: hanasu
+  translation: mówić
+  notes:
+- id: jpn-pol-003
+  phrase: 小さい
+  grammar: Adj i
+  transcription: chiisai
+  translation: mały
+  notes:
+- id: jpn-pol-004
+  phrase: 見る
+  grammar: V 2
+  transcription: miru
+  translation: widzieć
+  notes:

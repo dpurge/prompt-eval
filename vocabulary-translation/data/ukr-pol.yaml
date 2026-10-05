@@ -1,0 +1,24 @@
+- id: ukr-pol-001
+  phrase: собака
+  grammar: N f
+  transcription: 
+  translation: pies
+  notes:
+- id: ukr-pol-002
+  phrase: будинок
+  grammar: N m
+  transcription: 
+  translation: dom
+  notes:
+- id: ukr-pol-003
+  phrase: говорити
+  grammar: V impf
+  transcription: 
+  translation: mówić
+  notes:
+- id: ukr-pol-004
+  phrase: маленький
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

@@ -1,0 +1,24 @@
+- id: tgl-pol-001
+  phrase: aso
+  grammar: N
+  transcription: 
+  translation: pies
+  notes:
+- id: tgl-pol-002
+  phrase: bahay
+  grammar: N
+  transcription: 
+  translation: dom
+  notes:
+- id: tgl-pol-003
+  phrase: magsalita
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: tgl-pol-004
+  phrase: maliit
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

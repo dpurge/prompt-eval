@@ -24,3 +24,155 @@
   content: |-
     我想点一杯咖啡。学生在学校学习。今天天气很好。
   minItems: 4
+- id: arb-excerpt
+  language: arb
+  target: generate_vocabulary
+  smoke: true
+  content: |-
+    كنت في حالة من الإحباط، أغرق في دوامة من عدم اليقين. لكنني اتخذت في أعماقي قراراً، لن تكون هذه النهاية، مهما اشتدت الصعوبات.
+  minItems: 6
+- id: fas-excerpt
+  language: fas
+  target: generate_vocabulary
+  content: |-
+    شرکت نفتی آرامکو در عربستان سعودی اعلام کرده است که سود این شرکت در سه‌ماههٔ دوم سال ۲۰۲۶ بسیار زیاد شد. این خبر هم‌زمان با تنش‌ها در منطقه و اختلال در کشتیرانی خلیج فارس منتشر شد.
+  minItems: 6
+- id: heb-excerpt
+  language: heb
+  target: generate_vocabulary
+  content: |-
+    בַּבַּיִת יֵשׁ חֶדֶר. הַחֶדֶר בַּבַּיִת.
+  minItems: 3
+- id: heb-unpointed
+  language: heb
+  target: generate_vocabulary
+  content: |-
+    בבית יש חדר. החדר בבית.
+  minItems: 3
+- id: deu-excerpt
+  language: deu
+  target: generate_vocabulary
+  content: |-
+    Eine neue Umfrage zeigt, dass sich die politische Stimmung in Deutschland weiter verändert. Die Union verliert im Vergleich zum Vormonat etwas an Zuspruch und liegt jetzt bei 21 Prozent.
+  minItems: 6
+- id: spa-excerpt
+  language: spa
+  target: generate_vocabulary
+  content: |-
+    Durante la revolución industrial británica, las nuevas fábricas se enfrentaron a la necesidad de un control horario estricto. Un trabajador que llegaba incluso cinco minutos tarde podía paralizar toda una línea de montaje.
+  minItems: 6
+- id: tur-excerpt
+  language: tur
+  target: generate_vocabulary
+  content: |-
+    Türkiye, Suudi Arabistan ve Pakistan Mekke’de ortak bir savunma anlaşması imzaladı. Habere göre bu anlaşma, üç ülke arasında savunma alanında işbirliğini güçlendirmeyi amaçlıyor.
+  minItems: 6
+- id: lat-excerpt
+  language: lat
+  target: generate_vocabulary
+  content: |-
+    Ranae aquam amant. Magna rana parvam ranam vituperat.
+  minItems: 4
+- id: ron-excerpt
+  language: ron
+  target: generate_vocabulary
+  content: |-
+    Salut! Cum te cheamă? Mă numesc Ana. Dar tu? Eu mă numesc Maria. Încântată de cunoștință!
+  minItems: 4
+- id: fra-excerpt
+  language: fra
+  target: generate_vocabulary
+  content: |-
+    Je voudrais commander un café. La leçon commence à huit heures.
+  minItems: 4
+- id: ind-excerpt
+  language: ind
+  target: generate_vocabulary
+  content: |-
+    Saya ingin memesan kopi. Pelajaran dimulai pukul delapan.
+  minItems: 4
+- id: vie-excerpt
+  language: vie
+  target: generate_vocabulary
+  content: |-
+    Tôi muốn gọi một ly cà phê. Bài học bắt đầu lúc tám giờ.
+  minItems: 4
+- id: kor-excerpt
+  language: kor
+  target: generate_vocabulary
+  content: |-
+    저는 커피를 주문하고 싶어요. 수업은 여덟 시에 시작해요.
+  minItems: 4
+- id: jpn-excerpt
+  language: jpn
+  target: generate_vocabulary
+  smoke: true
+  content: |-
+    コーヒーを注文したいです。授業は八時に始まります。
+  minItems: 4
+- id: swe-excerpt
+  language: swe
+  target: generate_vocabulary
+  content: |-
+    Jag vill beställa en kaffe. Lektionen börjar klockan åtta.
+  minItems: 4
+- id: ukr-excerpt
+  language: ukr
+  target: generate_vocabulary
+  content: |-
+    Я хочу замовити каву. Урок починається о восьмій годині.
+  minItems: 4
+- id: swa-excerpt
+  language: swa
+  target: generate_vocabulary
+  content: |-
+    Ninataka kuagiza kahawa. Somo linaanza saa mbili.
+  minItems: 4
+- id: fin-excerpt
+  language: fin
+  target: generate_vocabulary
+  content: |-
+    Haluaisin tilata kahvin. Oppitunti alkaa kello kahdeksan.
+  minItems: 4
+- id: dan-excerpt
+  language: dan
+  target: generate_vocabulary
+  content: |-
+    Jeg vil gerne bestille en kaffe. Lektionen begynder klokken otte.
+  minItems: 4
+- id: nld-excerpt
+  language: nld
+  target: generate_vocabulary
+  content: |-
+    Ik wil graag een koffie bestellen. De les begint om acht uur.
+  minItems: 4
+- id: ita-excerpt
+  language: ita
+  target: generate_vocabulary
+  content: |-
+    Vorrei ordinare un caffè. La lezione comincia alle otto.
+  minItems: 4
+- id: grc-excerpt
+  language: grc
+  target: generate_vocabulary
+  content: |-
+    ὁ παῖς τὸν κύνα ὁρᾷ. ἡ γυνὴ ἐν τῇ οἰκίᾳ μένει.
+  minItems: 4
+- id: ell-excerpt
+  language: ell
+  target: generate_vocabulary
+  content: |-
+    Θέλω να παραγγείλω έναν καφέ. Το μάθημα αρχίζει στις οκτώ.
+  minItems: 4
+- id: yid-excerpt
+  language: yid
+  target: generate_vocabulary
+  content: |-
+    איך גיי אַהיים. דער הונט איז קליין.
+  minItems: 4
+- id: tgl-excerpt
+  language: tgl
+  target: generate_vocabulary
+  content: |-
+    Gusto kong umorder ng kape. Magsisimula ang klase sa alas-otso.
+  minItems: 4

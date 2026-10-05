@@ -1,0 +1,29 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+Japanese has no grammatical gender and no articles: every noun is just N.
+After verb: the group
+  1 = godan verb (ends in a u-row consonant)
+  2 = ichidan verb (ends in -iru or -eru)
+  irreg = する, くる
+After adjective:
+  i = i-adjective
+  na = na-adjective
+
+Examples (phrase -> tags):
+犬 -> N
+話す -> V 1
+見る -> V 2
+小さい -> Adj i
+きれいな -> Adj na

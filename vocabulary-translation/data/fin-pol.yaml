@@ -1,0 +1,24 @@
+- id: fin-pol-001
+  phrase: koira
+  grammar: N
+  transcription: 
+  translation: pies
+  notes:
+- id: fin-pol-002
+  phrase: talo
+  grammar: N
+  transcription: 
+  translation: dom
+  notes:
+- id: fin-pol-003
+  phrase: puhua
+  grammar: V 1
+  transcription: 
+  translation: mówić
+  notes:
+- id: fin-pol-004
+  phrase: pieni
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

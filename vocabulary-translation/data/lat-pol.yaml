@@ -1,0 +1,24 @@
+- id: lat-pol-001
+  phrase: rana
+  grammar: N f
+  transcription: 
+  translation: żaba
+  notes:
+- id: lat-pol-002
+  phrase: aqua
+  grammar: N f
+  transcription: 
+  translation: woda
+  notes:
+- id: lat-pol-003
+  phrase: magnus
+  grammar: Adj
+  transcription: 
+  translation: wielki
+  notes:
+- id: lat-pol-004
+  phrase: amare
+  grammar: V 1
+  transcription: 
+  translation: kochać
+  notes:

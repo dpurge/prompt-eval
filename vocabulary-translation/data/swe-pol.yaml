@@ -1,0 +1,24 @@
+- id: swe-pol-001
+  phrase: en hund
+  grammar: N c
+  transcription: 
+  translation: pies
+  notes:
+- id: swe-pol-002
+  phrase: ett hus
+  grammar: N n
+  transcription: 
+  translation: dom
+  notes:
+- id: swe-pol-003
+  phrase: tala
+  grammar: V
+  transcription: 
+  translation: mówić
+  notes:
+- id: swe-pol-004
+  phrase: liten
+  grammar: Adj
+  transcription: 
+  translation: mały
+  notes:

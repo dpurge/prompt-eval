@@ -1,0 +1,30 @@
+Grammar tags is an ordered string of space-separated tags:
+
+Part of speech (always capitalized):
+  N = noun
+  V = verb
+  Adj = adjective
+  Adv = adverb
+  Pron = pronoun
+  Prep = preposition
+  Conj = conjunction
+  Num = numeral
+  Part = particle
+  Phrase = fixed phrase or idiom
+
+After noun:
+- Gender (always lower case)
+  m = masculine
+  f = feminine
+  n = neuter
+
+After verb: the conjugation 1, 2, 3 or 4; irreg for an irregular verb
+After adjective: nothing
+
+Examples (phrase -> tags):
+rana -> N f
+puer -> N m
+templum -> N n
+amare -> V 1
+esse -> V irreg
+magnus -> Adj

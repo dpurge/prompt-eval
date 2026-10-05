@@ -70,10 +70,13 @@ function goPurpose(file, field) {
   const source = fs.readFileSync(file, "utf8");
   const block = source.match(new RegExp(`f\\.${field} = purposeFileConfig\\{([\\s\\S]*?)\\n\\t\\}`));
   if (!block) throw new Error(`purpose ${field} not found in ${file}`);
-  const prompt = block[1].match(/Prompt: ("(?:[^"\\]|\\.)*")/);
-  if (!prompt) throw new Error(`purpose ${field} has no Prompt string in ${file}`);
+  const literal = block[1].match(/Prompt: ("(?:[^"\\]|\\.)*")/);
+  // or a named constant (const DefaultXPrompt = `...`), as the longer prompts are
+  const constant = block[1].match(/Prompt: (Default\w+),/);
+  if (!literal && !constant) throw new Error(`purpose ${field} has no Prompt string or Default constant in ${file}`);
   const numCtx = block[1].match(/NumCtx: (\d+)/);
-  return { prompt: JSON.parse(prompt[1]), numCtx: numCtx ? Number(numCtx[1]) : 0 };
+  const prompt = literal ? JSON.parse(literal[1]) : goString(file, "const", constant[1]);
+  return { prompt, numCtx: numCtx ? Number(numCtx[1]) : 0 };
 }
 
 function schemaOf(configFile) {
