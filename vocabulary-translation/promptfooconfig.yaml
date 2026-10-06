@@ -1,7 +1,7 @@
 description: Vocabulary translation
 
 prompts:
-  - file://prompts/system.txt
+  - file://../prompt/default/system/generate-vocabulary-item.txt
 
 providers:
   - id: ollama:chat:gemma4:12b

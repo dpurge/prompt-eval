@@ -1,10 +1,10 @@
 description: Models item translation
 
 # Same call shape as phraseforge's generate_models_item job: one user
-# message (prompts/system.txt, synced from config.go's DefaultModelsItemPrompt
+# message (prompt/default/system/generate-models-item.txt, synced from config.go's DefaultModelsItemPrompt
 # by scripts/sync-prompts.js), the reply schema sent as Ollama's "format".
 prompts:
-  - file://prompts/system.txt
+  - file://../prompt/default/system/generate-models-item.txt
 
 providers:
   - id: ollama:chat:gemma4:12b

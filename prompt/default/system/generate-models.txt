@@ -9,6 +9,8 @@ No preamble, numbering, bullets, comments or code fences, only the item lines.
 - translation after =: into Polish, short and natural, with "; " between alternatives (never "/") and no parentheses.
 Each of [transcription] and = translation is left out entirely, without empty brackets, when it does not apply.
 
+{{transcriptionPrompt}}
+
 Example 1.
 Input: Die Union verliert im Vergleich zum Vormonat an Zuspruch und liegt jetzt bei 21 Prozent. Viele Menschen sind mit der Lage unzufrieden.
 Output:

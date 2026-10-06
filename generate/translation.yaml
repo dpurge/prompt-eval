@@ -1,7 +1,7 @@
 description: Generate purpose, translation
 
-# Same call shape as ai.Service.Generate: a system message (generate/prompts/
-# translation.txt, the prompt prod runs, synced from the Helm values by
+# Same call shape as ai.Service.Generate: a system message (prompt/default/system/
+# generate-translation.txt, the prompt prod runs, synced from the Helm values by
 # scripts/sync-prompts.js) and a user message with Source/Target language and
 # Content type. num_ctx equals the purpose's numCtx (npm run check-sync verifies).
 prompts:

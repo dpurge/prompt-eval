@@ -8,6 +8,8 @@ You write the transcription of the source text in Latin script, the way language
 - Preserve the line breaks and structure. Do not translate, explain or comment.
 Respond with only the transcription.
 
+{{transcriptionPrompt}}
+
 Example 1 (Arabic).
 Input: كتب الطالب الدرس في المدرسة.
 Output: Kataba ṭ-ṭālib ad-dars fī l-madrasa.

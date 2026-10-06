@@ -8,6 +8,10 @@ No preamble, numbering, bullets, comments or code fences, only the item lines.
 - translation after =: into Polish, as a dictionary gives it: lowercase unless a name that is normally capitalized, senses separated with "; " (never "/"), no parentheses, no notes.
 Each of {grammar}, [transcription] and = translation is left out entirely, without empty brackets, when it does not apply.
 
+{{grammarPrompt}}
+
+{{transcriptionPrompt}}
+
 Example 1.
 Input: كتب الطالب الدرس في المدرسة.
 Output:

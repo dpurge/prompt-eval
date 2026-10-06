@@ -1,4 +1,4 @@
-// The eval's own texts (section files, item data, generate datasets) use the
+// The eval's own texts (language snippet files, item data, generate datasets) use the
 // standard way of representing each script, so a reference never differs from
 // a correct model reply only by how a character is encoded:
 //   - Unicode NFC;
@@ -17,7 +17,7 @@ const path = require("path");
 
 const root = path.join(__dirname, "..");
 const SCANNED = [
-  { dir: "vocabulary-translation/prompts", ext: ".txt" },
+  ...fs.readdirSync(path.join(root, "prompt", "lang")).map((lang) => ({ dir: `prompt/lang/${lang}/snippet`, ext: ".txt" })),
   { dir: "vocabulary-translation/data", ext: ".yaml" },
   { dir: "models-item/data", ext: ".yaml" },
   { dir: "datasets", ext: ".yaml", only: /^generate-/ },
@@ -40,7 +40,7 @@ function problems(file, text) {
   const presentation = text.match(PRESENTATION);
   if (presentation) found.push(`has the presentation form U+${presentation[0].codePointAt(0).toString(16).toUpperCase()}`);
   if (YIDDISH_LIGATURE_WITHOUT_PASEKH.test(text)) found.push("has a Yiddish digraph ligature other than the pasekh form");
-  if (/(^|[/\\-])ron[-.]/.test(path.basename(file)) || path.basename(file).startsWith("ron-")) {
+  if (/(^|[/\\-])ron[-./\\]/.test(file)) {
     if (ROMANIAN_CEDILLA.test(text)) found.push("uses cedilla ş/ţ; Romanian takes comma-below ș/ț");
   }
   return found;
@@ -59,4 +59,6 @@ test("the checks themselves catch each kind of non-standard text", () => {
   assert.match(problems("ron-grammar.txt", "ş")[0], /cedilla/);
   assert.deepStrictEqual(problems("tur-grammar.txt", "ş"), []);
   assert.deepStrictEqual(problems("ron-grammar.txt", "ș ț"), []);
+  assert.match(problems("prompt/lang/ron/snippet/grammar.txt", "ş")[0], /cedilla/);
+  assert.deepStrictEqual(problems("prompt/lang/tur/snippet/grammar.txt", "ş"), []);
 });
