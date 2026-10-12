@@ -1,32 +1,38 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  Ph = Phrase (fixed expression or idiom)
+  N = Noun (Substantiv): Haus, Mensch
+  V = Verb (Verb): gehen, machen
+  Adj = Adjective (Adjektiv): groß, gut
+  Adv = Adverb (Adverb): heute, gern
+  Pron = Pronoun (Pronomen): ich, er
+  Art = Article (Artikel): der, die, das, ein
+  Det = Determiner: dieser, jeder, welcher
+  Num = Numeral (Numerale): zwei, drei
+  Prep = Preposition (Präposition): in, auf, mit
+  Conj = Conjunction (Konjunktion): und, aber
+  Int = Interrogative: wer, was, wann
+  Neg = Negation: nicht, kein
+  Aux = Auxiliary verb (Hilfsverb): haben, sein, werden
+  Modal = Modal verb (Modalverb): können, müssen, dürfen
+  Part = Particle (Partikel): doch, ja, eben
+  Interj = Interjection (Interjektion): ach, oh, aua
+  PropN = Proper noun (Eigenname): Berlin, Deutschland
 
-After noun:
-- Gender (always lower case)
+- Gender (always lower case):
   m = masculine
   f = feminine
   n = neuter
-- Number: pl only for a plural form listed on its own
 
-After verb:
-  sep = separable prefix
-  refl = reflexive
-After adjective: nothing
+- Number (always lower case):
+  sg = singular
+  pl = plural
+
 
 Examples (phrase -> tags):
 der Hund -> N m
 die Bücher -> N n pl
-aufstehen -> V sep
-sich freuen -> V refl
+aufstehen -> V
+sich freuen -> V
 klein -> Adj

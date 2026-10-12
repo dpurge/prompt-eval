@@ -1,23 +1,25 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
-
-Persian has no grammatical gender: every noun is just N.
-After verb: nothing (irreg for an irregular verb)
-After adjective: nothing
+  Ph = fixed phrase or idiom
+  N = Noun: کتاب, خانه
+  V = Verb: رفتن, خوردن
+  Adj = Adjective: بزرگ, خوب
+  Adv = Adverb: امروز, همیشه
+  Pron = Pronoun: من, او
+  Det = Determiner: این, آن
+  Num = Numeral: یک, سه
+  Prep = Preposition: از, به, در
+  Conj = Conjunction: و, اما
+  Int = Interrogative: چه, کی
+  Neg = Negation: نه, نـ (verbal negation)
+  Aux = Auxiliary verb: بودن, شدن
+  Part = Particle: را, هم
+  Interj = Interjection: آه, وای
+  PropN = Proper noun: تهران
 
 Examples (phrase -> tags):
 خانه -> N
 دیدن -> V
-بودن -> V irreg
+بودن -> Aux
 کوچک -> Adj

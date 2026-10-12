@@ -1,31 +1,49 @@
 Grammar tags is an ordered string of space-separated tags:
 
-Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+- Part of speech (always capitalized, always marked):
+  Ph = Phrase (fixed expression or idiom)
+  N = Noun (ὄνομα): λόγος
+  V = Verb (ῥῆμα): λύω
+  Adj = Adjective (ἐπίθετον): ἀγαθός
+  Adv = Adverb (ἐπίρρημα): εὖ, νῦν
+  Pron = Pronoun (ἀντωνυμία): ἐγώ, σύ
+  Art = Article (ἄρθρον): ὁ, ἡ, τό
+  Det = Determiner (Demonstrative or other determinative uses)
+  Num = Numeral (ἀριθμητικόν): δύο, τρεῖς
+  Prep = Preposition (πρόθεσις): ἐν, διά
+  Conj = Conjunction (σύνδεσμος): καί, ἀλλά
+  Int = Interrogative: τίς, τί
+  Neg = Negation: οὐ, μή
+  Part = Particle: γάρ, δή, μέν, ἄν
+  Interj = Interjection: φεῦ
+  PropN = Proper noun: Ἀθήναι, Σωκράτης
 
-After noun:
-- Gender (always lower case)
+- Case (always lower case, marked only if not nominative)
+  nom = nominative
+  gen = genetive
+  dat = dative
+  acc = accusative
+  voc = vocative
+
+- Number (always lower case, marked only if not singular)
+  sg = singular
+  du = dual
+  pl = plural
+
+- Gender (always lower case, marked only if article is not visible)
   m = masculine
   f = feminine
   n = neuter
-- Declension: 1, 2 or 3; irreg for an irregular noun
 
-After verb: contract for a contract verb; irreg for an irregular verb
-After adjective: nothing
+- Degree (always lower case, marked only if not positive)
+  pos = positive
+  comp = comparative
+  sup = superlative
 
 Examples (phrase -> tags):
-ὁ κύων, κυνός -> N m 3
-ἡ οἰκία, -ας -> N f 1
-τὸ παιδίον, -ου -> N n 2
+ὁ κύων -> N
+ἡ οἰκία -> N
+τὸ παιδίον -> N
 λέγω -> V
-ὁράω -> V contract
+ὁράω -> V
 μικρός -> Adj

@@ -1,19 +1,25 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (名词): 人, 书
+  V = Verb (动词): 吃, 去
+  Adj = Adjective (形容词): 大, 好
+  Adv = Adverb (副词): 很, 都
+  Pron = Pronoun (代词): 我, 他
+  Det = Determiner (限定词): 这, 那
+  Num = Numeral (数词): 一, 三
+  Clf = Classifier / measure word (量词): 个, 本
+  Prep = Preposition / coverb (介词): 在, 给
+  Conj = Conjunction (连词): 和, 但是
+  Int = Interrogative (疑问词): 谁, 什么
+  Neg = Negation (否定词): 不, 没
+  Part = Particle (助词): 的, 了, 吗
+  Aux = Auxiliary verb (助动词): 能, 应该
+  Interj = Interjection (叹词): 哎, 哇
+  Onom = Onomatopoeia (象声词): 砰
 
 After noun: the measure word as a Chinese character, only if you are sure of it (never romanized); otherwise nothing
-After verb: nothing (irreg for an irregular verb)
+After verb: nothing
 After adjective: nothing
 
 Examples (phrase -> tags):

@@ -1,29 +1,36 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  Ph = Phrase (fixed expression or idiom)
+  N = Noun (sustantivo): casa, libro
+  V = Verb (verbo): hablar, comer
+  Adj = Adjective (adjetivo): grande, bueno
+  Adv = Adverb (adverbio): ayer, bien
+  Pron = Pronoun (pronombre): yo, ella
+  Art = Article (artículo): el, la, los, las, un, una
+  Det = Determiner (determinante): este, mi, cada
+  Num = Numeral (numeral): dos, tres
+  Prep = Preposition (preposición): de, en, con
+  Conj = Conjunction (conjunción): y, pero, o
+  Int = Interrogative: quién, qué, cuándo
+  Neg = Negation: no, tampoco
+  Aux = Auxiliary verb: haber (in compound tenses), ser (in passive constructions)
+  Modal = Modal verb / expression: poder, deber
+  Part = Particle: sí, no
+  Interj = Interjection (interjección): ¡ay!, ¡uf!
+  PropN = Proper noun (nombre propio): Madrid, María
 
-After noun:
 - Gender (always lower case)
   m = masculine
   f = feminine
-- Number: pl only for a plural form listed on its own
 
-After verb: the class ar, er or ir, then irreg for an irregular verb
-After adjective: nothing
+- Number (always lower case):
+  sg = singular
+  pl = plural
 
 Examples (phrase -> tags):
 el perro -> N m
 las casas -> N f pl
-hablar -> V ar
-tener -> V er irreg
+hablar -> V
+tener -> V
 pequeño -> Adj

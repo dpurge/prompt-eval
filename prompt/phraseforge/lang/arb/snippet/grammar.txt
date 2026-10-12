@@ -1,31 +1,56 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  Ph = phrase, fixed expression or idiom
+  N = noun (اِسْم): كِتَابٌ
+  V = verb (فِعْل): كَتَبَ
+  P = particle (حَرْف): فِي, مِنْ
+  Adj = adjective (صِفَة / نَعْت): كَبِيرٌ
+  Adv = adverb (ظَرْف): أَمْسِ, هُنَا
+  Pron = pronoun (ضَمِير): هُوَ, أَنَا
+  Prep = preposition (حَرْف جَرّ): إِلَى, عَلَى
+  Conj = conjunction (عَطْف): وَ, أَوْ
+  Part = particle (أداة): لا
+  Det = determiner (مُحَدِّد): الـ
+  Num = numeral (عَدَد): ثَلَاثَةٌ
+  Int = interrogative (اِسْتِفْهَام): مَنْ, مَتَى
+  Interj = interjection (تَعَجُّب / نِدَاء): أُفّ
+  PropN = Proper noun: مُحَمَّد، مِصْر
+  Dem = Demonstrative: هَذَا، ذَلِكَ
+  Rel = Relative pronoun: الَّذِي، الَّتِي
+  Neg = Negation: لَا، لَمْ، لَنْ
+  IntP = Interrogative particle: هَلْ، أَ
+  IntN = Interrogative noun: مَنْ، مَا
+  IntAdv = Interrogative adverb: أَيْنَ، مَتَى، كَيْفَ
+  Aux = Auxiliary verb: كَانَ (in auxiliary use)
+  Modal = Modal: يَجِبُ، يُمْكِنُ
+  Part = Participial form: كَاتِبٌ، مَكْتُوبٌ
+  Ger = Verbal noun (maṣdar): كِتَابَةٌ
+  Art = Definite article: الـ
+  Poss = Possessive marker: ـهُ، ـهَا (possessive suffixes)
 
-After noun:
-- Gender (always lower case)
+- Gender (always lower case):
   m = masculine
   f = feminine
-- Number
-  sg = singular
-  pl = plural (only for a plural form listed on its own)
 
-After verb: nothing (irreg for an irregular verb)
-After adjective: nothing
+- Number (always lower case):
+  sg = singular
+  pl = plural
+  du = dual
+
+Core tags = Ph, N, V, Adj, Adv, Pron, P, Conj, Num, Int, Neg
+Optional specialized tags (prefer to core tags): PropN, Dem, Rel, IntP, IntN, IntAdv, Art, Aux, 
+
+Tags after:
+- noun: gender, number
+- adjective: gender, number
+- pronoun: gender, number
+- numeral: gender
+- everything else: nothing
 
 Examples (phrase -> tags):
 مُبَرْمِجٌ -> N m sg
 نِهَايَةٌ -> N f sg
-اِتَّخَذَ -> V
-كَانَ -> V irreg
-كَبِيرٌ -> Adj
+كَتَبَ -> V
+كَانَ -> V
+كَبِيرٌ -> Adj m sg

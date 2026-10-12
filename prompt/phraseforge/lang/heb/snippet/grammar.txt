@@ -1,28 +1,32 @@
 Grammar tags is an ordered string of space-separated tags:
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  Ph = Phrase (fixed expression or idiom)
+  N = Noun (שם עצם): סֵפֶר, בַּיִת
+  V = Verb (פועל): כָּתַב, לִכְתֹּב
+  Adj = Adjective (שם תואר): גָּדוֹל, טוֹב
+  Adv = Adverb (תואר הפועל): כָּאן, תָּמִיד
+  Pron = Pronoun (כינוי גוף): אֲנִי, הוּא
+  Det = Determiner: זֶה, זוֹ
+  Art = Definite article: ה־
+  Num = Numeral (מספר): אֶחָד, שְׁלוֹשָׁה
+  Prep = Preposition (מילת יחס): בְּ־, לְ־, מִן
+  Conj = Conjunction (מילת חיבור): וְ־, אֲבָל
+  Int = Interrogative: מִי, מָה
+  Neg = Negation: לֹא, אַל
+  Aux = Auxiliary verb: הָיָה
+  Part = Particle: גַּם, רַק
+  Interj = Interjection: אוֹי
+  PropN = Proper noun: יִשְׂרָאֵל, דָּוִד
 
 After noun:
 - Gender (always lower case)
   m = masculine
   f = feminine
 
-After verb: the verb pattern, lower case (qal, piel, hifil, ...); irreg for an irregular verb
-After adjective: nothing
-
 Examples (phrase -> tags):
 כלב -> N m
 אישה -> N f
-לדבר -> V piel
-לראות -> V qal
+לדבר -> V
+לראות -> V
 קטן -> Adj

@@ -7,7 +7,7 @@ Reading rules:
 - Always write the short vowels. Take them from the vocalized text; when the text is not vocalized, give the standard reading of the word as a dictionary gives it. Never skip the transcription because the text has no vowel signs.
 - Drop case endings and tanwīn: كَلْبٌ -> kalb, مَدْرَسَةٌ -> madrasa. Keep the adverbial -an: شُكْراً -> šukran.
 - Sun letters assimilate the article: الشَّمْسُ -> aš-šams; moon letters do not: الْقَمَرُ -> al-qamar.
-- Elide hamzat al-waṣl after a vowel: فِي الْمَدْرَسَةِ -> fī l-madrasa.
-- tāʾ marbūṭa: a in pause, at in a construct: مَدِينَةُ الْقَاهِرَةِ -> madīnat al-Qāhira.
+- Elide hamzat al-waṣl after a vowel, respect shortening preposition vowels: فِي الْمَدْرَسَةِ -> fi-l-madrasa.
+- tāʾ marbūṭa: a in pause, at in a construct: مَدِينَةُ الْقَاهِرَةِ -> madīnatu-l-Qāhira.
 - Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
 - Use Latin punctuation only.
