@@ -77,3 +77,84 @@ test("failures carry a named score so a report can group them", () => {
   assert.deepEqual(validateReply("nope", deu).namedScores, { json: 0 });
   assert.deepEqual(validateReply(reply({ phrase: "x", translation: "y" }), deu).namedScores, { phrase: 0 });
 });
+
+test("an optional example is scored on style only: short and not a known one", () => {
+  const withExamples = { ...deu, examples: "- einen Koffer packen\n- der große Koffer" };
+  const good = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: "ein schwerer Koffer" }), withExamples);
+  assert.equal(good.pass, true, good.reason);
+  const none = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: null }), withExamples);
+  assert.equal(none.pass, true, none.reason);
+  const wrongType = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: ["x"] }), withExamples);
+  assert.equal(wrongType.pass, true, "a wrong-typed example is ignored, as phraseforge ignores it");
+  // structureOnly names each failed style check in the reason
+  const structure = { ...withExamples, structureOnly: true };
+  const long = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: "x".repeat(81) }), structure);
+  assert.equal(long.pass, false);
+  assert.match(long.reason, /exampleShort/);
+  const repeat = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: "  der große Koffer " }), structure);
+  assert.equal(repeat.pass, false);
+  assert.match(repeat.reason, /exampleNew/);
+  // and in the scored mode a failed example still fails the case through the style component
+  const scoredLong = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", example: "x".repeat(81) }), withExamples);
+  assert.equal(scoredLong.pass, false);
+});
+
+test("a rewrite is scored on style: asked for only with a usage, and the expected one when the row has one", () => {
+  const base = { ...deu, usage: "die Kinder spielen", structureOnly: true };
+  const expectsRewrite = { ...base, phrase: "Kinder", rewrite: "das Kind" };
+  const asked = (phrase, rewrite) => reply({ phrase, grammar: "N pl", translation: "dzieci", rewrite });
+
+  assert.equal(validateReply(asked("Kinder", { phrase: "das Kind", grammar: "N n", transcription: null }), expectsRewrite).pass, true);
+  const missing = validateReply(asked("Kinder", null), expectsRewrite);
+  assert.equal(missing.pass, false);
+  assert.match(missing.reason, /rewriteMissing/);
+  const other = validateReply(asked("Kinder", { phrase: "der Kind" }), expectsRewrite);
+  assert.match(other.reason, /rewriteExpected/);
+
+  const dictionaryForm = { ...base, phrase: "der Koffer" };
+  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", rewrite: null }), dictionaryForm).pass, true);
+  const unneeded = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", rewrite: { phrase: "Koffer" } }), dictionaryForm);
+  assert.match(unneeded.reason, /rewriteUnneeded/);
+
+  const noUsage = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", rewrite: { phrase: "Koffer" } }), { ...dictionaryForm, usage: "" });
+  assert.match(noUsage.reason, /rewriteWithUsage/);
+
+  // anything but an object with a phrase is ignored, as phraseforge ignores it
+  assert.equal(validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka", rewrite: "Koffer" }), dictionaryForm).pass, true);
+});
+
+test("a new sense is scored on style: it needs an existing translation, must be new, and the row says whether one is wanted", () => {
+  const base = { ...deu, phrase: "Bank", usage: "Geld auf der Bank einzahlen", currentTranslation: "ławka", referenceTranslation: "ławka", translation: "ławka", structureOnly: true };
+  const wants = { ...base, sense: true };
+  const asked = (newSense) => reply({ phrase: "Bank", grammar: "N f", translation: "ławka", newSense });
+
+  assert.equal(validateReply(asked("bank"), wants).pass, true);
+  assert.match(validateReply(asked(null), wants).reason, /senseMissing/);
+  assert.match(validateReply(asked(" Ławka "), wants).reason, /senseNew/, "a sense already there is not new, ignoring case");
+  assert.match(validateReply(asked("bank"), base).reason, /senseUnneeded/, "the row says the translation covers the usage");
+  assert.equal(validateReply(asked(null), base).pass, true);
+
+  const noExisting = { ...base, currentTranslation: "", translation: "" };
+  assert.match(validateReply(asked("bank"), noExisting).reason, /senseWithTranslation/);
+  // newSense null and nothing in translation: a wanted sense is missing; a wrong-typed newSense is ignored
+  assert.match(validateReply(asked(5), wants).reason, /senseMissing/);
+});
+
+test("a sense the model put into translation counts, as phraseforge recovers it, when the existing senses are kept", () => {
+  const base = { ...deu, phrase: "Bank", usage: "Geld auf der Bank einzahlen", currentTranslation: "ławka", referenceTranslation: "ławka", translation: "ławka", structureOnly: true, sense: true };
+  const inTranslation = (translation, newSense = null) => reply({ phrase: "Bank", grammar: "N f", translation, newSense });
+
+  assert.equal(validateReply(inTranslation("bank; ławka"), base).pass, true);
+  assert.equal(validateReply(inTranslation("ławka; bank"), base).pass, true);
+  assert.match(validateReply(inTranslation("ławka"), base).reason, /senseMissing/);
+  assert.match(validateReply(inTranslation("bank"), base).reason, /senseMissing/, "a re-translation that dropped the old sense is not recovered");
+  assert.match(validateReply(inTranslation("bank; ławka"), { ...base, sense: false }).reason, /senseUnneeded/);
+});
+
+test("the reference answer comes from referenceTranslation when a run carries it, not from the prompt's translation var", () => {
+  const vars = { ...deu, translation: "", referenceTranslation: "walizka" };
+  const ok = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "walizka" }), vars);
+  assert.equal(ok.pass, true);
+  const wrong = validateReply(reply({ phrase: "der Koffer", grammar: "N m", translation: "torba" }), vars);
+  assert.equal(wrong.pass, false);
+});

@@ -22,3 +22,28 @@
   transcription: 
   translation: wstawać
   notes:
+- id: deu-pol-901
+  phrase: Kinder
+  grammar: N pl
+  transcription:
+  translation: dzieci
+  notes:
+  usage: die Kinder spielen
+  rewrite: das Kind
+- id: deu-pol-902
+  phrase: Bank
+  grammar: N f
+  transcription:
+  translation: ławka
+  notes:
+  currentTranslation: ławka
+  usage: Geld auf der Bank einzahlen
+  sense: true
+- id: deu-pol-903
+  phrase: Schule
+  grammar: N f
+  transcription:
+  translation: szkoła
+  notes:
+  currentTranslation: szkoła
+  usage: die Schule ist alt

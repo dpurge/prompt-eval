@@ -17,7 +17,7 @@ const path = require("path");
 
 const root = path.join(__dirname, "..");
 const SCANNED = [
-  ...fs.readdirSync(path.join(root, "prompt", "lang")).map((lang) => ({ dir: `prompt/lang/${lang}/snippet`, ext: ".txt" })),
+  ...fs.readdirSync(path.join(root, "prompt", "phraseforge", "lang")).map((lang) => ({ dir: `prompt/phraseforge/lang/${lang}/snippet`, ext: ".txt" })),
   { dir: "vocabulary-translation/data", ext: ".yaml" },
   { dir: "models-item/data", ext: ".yaml" },
   { dir: "datasets", ext: ".yaml", only: /^generate-/ },
@@ -59,6 +59,6 @@ test("the checks themselves catch each kind of non-standard text", () => {
   assert.match(problems("ron-grammar.txt", "ş")[0], /cedilla/);
   assert.deepStrictEqual(problems("tur-grammar.txt", "ş"), []);
   assert.deepStrictEqual(problems("ron-grammar.txt", "ș ț"), []);
-  assert.match(problems("prompt/lang/ron/snippet/grammar.txt", "ş")[0], /cedilla/);
-  assert.deepStrictEqual(problems("prompt/lang/tur/snippet/grammar.txt", "ş"), []);
+  assert.match(problems("prompt/phraseforge/lang/ron/snippet/grammar.txt", "ş")[0], /cedilla/);
+  assert.deepStrictEqual(problems("prompt/phraseforge/lang/tur/snippet/grammar.txt", "ş"), []);
 });

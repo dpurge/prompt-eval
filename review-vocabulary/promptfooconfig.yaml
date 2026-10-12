@@ -1,0 +1,137 @@
+description: Review one vocabulary entry and propose corrections
+
+# Same call shape as phraseforge's review_vocabulary call: one user message
+# (prompt/phraseforge/default/system/review-vocabulary.txt, synced to the
+# embedded default by scripts/sync-prompts.js), the reply schema sent as
+# Ollama's "format". The snippets (dictionary form, grammar, transcription)
+# are filled from prompt/phraseforge/lang/<lang> by generate-tests.js. num_ctx
+# equals the purpose's numCtx and the schema equals ai.ReviewVocabularySchema
+# (npm run check-sync verifies both). Change the provider below to review with
+# a more capable model.
+prompts:
+  - file://../prompt/phraseforge/default/system/review-vocabulary.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      num_ctx: 8192
+      format: &reviewSchema
+        type: object
+        required:
+          - phrase
+          - grammar
+          - transcription
+          - translations
+          - notes
+          - examples
+        properties:
+          phrase:
+            type: object
+            required:
+              - ok
+              - suggestion
+              - reason
+            properties:
+              ok:
+                type: boolean
+              suggestion:
+                type: string
+              reason:
+                type: string
+          grammar:
+            type: object
+            required:
+              - ok
+              - suggestion
+              - reason
+            properties:
+              ok:
+                type: boolean
+              suggestion:
+                type: string
+              reason:
+                type: string
+          transcription:
+            type: object
+            required:
+              - ok
+              - suggestion
+              - reason
+            properties:
+              ok:
+                type: boolean
+              suggestion:
+                type: string
+              reason:
+                type: string
+          translations:
+            type: array
+            items:
+              type: object
+              required:
+                - locale
+                - ok
+                - suggestion
+                - reason
+              properties:
+                locale:
+                  type: string
+                ok:
+                  type: boolean
+                suggestion:
+                  type: string
+                reason:
+                  type: string
+          notes:
+            type: array
+            items:
+              type: object
+              required:
+                - locale
+                - ok
+                - suggestion
+                - reason
+              properties:
+                locale:
+                  type: string
+                ok:
+                  type: boolean
+                suggestion:
+                  type: string
+                reason:
+                  type: string
+          examples:
+            type: array
+            items:
+              type: object
+              required:
+                - index
+                - action
+                - suggestion
+                - reason
+              properties:
+                index:
+                  type: integer
+                action:
+                  type: string
+                  enum:
+                    - keep
+                    - remove
+                    - shorten
+                suggestion:
+                  type: string
+                reason:
+                  type: string
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *reviewSchema
+
+    - type: javascript
+      value: file://../lib/promptfoo-review-assert.js
+
+tests:
+  - file://generate-tests.js

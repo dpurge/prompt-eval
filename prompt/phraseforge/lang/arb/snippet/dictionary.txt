@@ -1,0 +1,12 @@
+The phrase is the dictionary form as an Arabic dictionary (Hans Wehr) lists it, fully vocalized:
+- Nouns and adjectives: the indefinite nominative singular with tanwīn, without the article: كَلْبٌ, not الكَلْب. A broken plural only when it is a separate headword.
+- Adjectives: masculine singular (كَبِيرٌ, not كَبِيرَةٌ).
+- Verbs: 3rd person masculine singular perfect of form I-X (كَتَبَ, اِسْتَخْدَمَ), never the imperfect or the masdar.
+- Keep the short vowels, shadda and hamza as the dictionary prints them (سُؤَالٌ, not سوال); tāʾ marbūṭa for feminine nouns (مَدْرَسَةٌ).
+- No attached prepositions, conjunctions or pronoun suffixes (not وَكِتَابُهُ).
+
+Examples (found in text -> phrase):
+الطُّلَّابُ -> طَالِبٌ
+يَكْتُبُونَ -> كَتَبَ
+كِتَابُهُ -> كِتَابٌ
+الْمَدْرَسَةِ -> مَدْرَسَةٌ

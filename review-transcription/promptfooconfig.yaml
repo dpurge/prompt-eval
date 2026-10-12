@@ -1,0 +1,44 @@
+description: Review the transcription of a text or dialog
+
+# Same call shape as phraseforge's review_transcription call: one user message
+# (prompt/phraseforge/default/system/review-transcription.txt, synced to the embedded
+# default by scripts/sync-prompts.js), the reply schema sent as Ollama's
+# "format". num_ctx equals the purpose's numCtx and the schema equals
+# ai.ReviewTranscriptionSchema (npm run check-sync verifies both). Run one case with SMOKE=1
+# against a local model; change the provider to review with a more capable one.
+prompts:
+  - file://../prompt/phraseforge/default/system/review-transcription.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      num_ctx: 16384
+      format: &schema
+        type: object
+        required:
+          - ok
+          - suggestion
+          - reason
+        properties:
+          ok:
+            type: boolean
+          suggestion:
+            type: string
+          reason:
+            type: string
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *schema
+
+tests:
+  - description: deu-transcription-with-a-missing-sentence
+    vars:
+      sourceLanguage: German
+      text: "Der Hund schläft im Garten. Die Kinder spielen mit dem Ball."
+      transcription: "Der Hund schläft im Garten."
+      transcriptionPrompt: "Transcribe using the standard romanization for this language."
+      vocabulary: "- der Hund = en: dog | pl: pies"

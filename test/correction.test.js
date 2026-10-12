@@ -78,3 +78,14 @@ test("conversation is original prompt, rejected reply, correction", () => {
   assert.equal(messages[1].content, v.raw);
   assert.equal(messages[2].content, correctionMessage(v.error));
 });
+
+test("renderItemPrompt fills usage and examples, and they stay empty when not given", () => {
+  const { formatExamples } = require("../lib/correction");
+  assert.equal(formatExamples(["a b", "c d"]), "- a b\n- c d");
+  assert.equal(formatExamples([]), "");
+  assert.equal(formatExamples(undefined), "");
+  assert.equal(renderItemPrompt("[{{usage}}][{{examples}}]", { usage: "u", examples: formatExamples(["x", "y"]) }), "[u][- x\n- y]");
+  assert.equal(renderItemPrompt("[{{usage}}][{{examples}}]", {}), "[][]");
+  // one pass: a value that looks like a placeholder is not expanded again
+  assert.equal(renderItemPrompt("{{usage}}|{{examples}}", { usage: "{{phrase}}", phrase: "P", examples: "- {{usage}}" }), "{{phrase}}|- {{usage}}");
+});

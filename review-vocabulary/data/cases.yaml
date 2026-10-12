@@ -1,0 +1,43 @@
+# Hand-written cases for the review-vocabulary prompt: one dictionary entry as
+# it is stored, and the checks a careful reviewer raises (flags: any of phrase,
+# grammar, transcription, translations, notes, examples; none = the entry is
+# fine). The dictionary-form snippets come from prompt/phraseforge/lang/<lang>.
+- id: deu-inflected-phrase
+  lang: deu
+  language: German
+  phrase: den Hunden
+  grammar: N m
+  examples: [mit den Hunden spielen]
+  translations:
+    - {locale: en, translation: dog}
+    - {locale: pl, translation: pies}
+  flags: [phrase] # a dative plural, the dictionary form is der Hund
+- id: deu-clean
+  lang: deu
+  language: German
+  phrase: der Hund
+  grammar: N m
+  examples: [ein großer Hund]
+  translations:
+    - {locale: en, translation: dog}
+    - {locale: pl, translation: pies}
+  flags: []
+- id: fin-verb-form
+  lang: fin
+  language: Finnish
+  phrase: puhun
+  grammar: V 1
+  translations:
+    - {locale: en, translation: to speak}
+    - {locale: pl, translation: mówić}
+  flags: [phrase] # 1st person singular, the dictionary form is puhua
+- id: cmn-aspect-particle
+  lang: cmn
+  language: Mandarin Chinese
+  phrase: 吃了
+  grammar: V
+  transcription: chī le
+  translations:
+    - {locale: en, translation: to eat}
+    - {locale: pl, translation: jeść}
+  flags: [phrase, transcription] # aspect particle attached, the headword is 吃 (chī)

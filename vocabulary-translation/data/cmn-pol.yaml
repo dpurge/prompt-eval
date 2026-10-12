@@ -4,6 +4,10 @@
   transcription: míngzi
   translation: imię
   notes: 
+  usage: 他的名字很长
+  examples:
+    - 我的名字
+    - 写名字
 - id: cmn-pol-002
   phrase: 学生
   grammar: N

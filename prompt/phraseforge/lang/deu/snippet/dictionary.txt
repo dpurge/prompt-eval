@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Duden lists it:
+- Nouns: nominative singular with the definite article: der Hund, die Frau, das Kind. A plural form only for a plural-only noun (die Eltern, die Leute). No article in the phrase for a name.
+- Verbs: the infinitive, with the separable prefix attached (aufstehen, not stehen ... auf); reflexive verbs with sich (sich freuen).
+- Adjectives and participles used as adjectives: the uninflected base form (klein, not kleinen); a participle only when it is a headword of its own (geschlossen).
+- Spelling: current German orthography; ß, ä, ö, ü kept; nouns capitalized, everything else lower case.
+
+Examples (found in text -> phrase):
+den Kindern -> das Kind
+ging ... aus -> ausgehen
+freut sich -> sich freuen
+kleinen -> klein

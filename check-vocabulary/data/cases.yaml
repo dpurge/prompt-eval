@@ -1,0 +1,48 @@
+# Hand-written cases for the check-vocabulary prompt: known phrases with a usage
+# from a new text, what the dictionary already has for each, and the verdict a
+# careful reader would give (expected: true = the usage deserves to be added as
+# one more example).
+- id: deu-001
+  language: German
+  items:
+    - phrase: der Koffer
+      usage: den Koffer packen
+      examples: [ein schwerer Koffer]
+      translations: {pl: walizka}
+      expected: true # a verb with its object, not shown by the example
+    - phrase: der Tag
+      usage: jeden Tag
+      examples: [jeden Tag, der erste Tag]
+      translations: {pl: dzień}
+      expected: false # repeats a known example
+    - phrase: neu
+      usage: ein neues Buch
+      translations: {pl: nowy}
+      expected: true # a correct usage and no example yet
+    - phrase: das Buch
+      usage: das Buch
+      examples: [ein gutes Buch]
+      translations: {pl: książka}
+      expected: false # the phrase alone shows nothing
+    - phrase: die Bank
+      usage: Geld auf der Bank einzahlen
+      translations: {pl: ławka}
+      expected: true
+      sense: true # the financial meaning, which "ławka" (bench) does not cover
+- id: arb-001
+  language: Standard Arabic
+  items:
+    - phrase: كِتَابٌ
+      usage: كتاب جديد
+      translations: {pl: książka}
+      expected: true
+    - phrase: مَدْرَسَةٌ
+      usage: ذهب إلى المدرسة
+      examples: [مَدْرَسَةٌ كَبِيرَةٌ]
+      translations: {pl: szkoła}
+      expected: true # a verb with a preposition, not shown by the example
+    - phrase: كَتَبَ
+      usage: كتب الدرس
+      examples: [كَتَبَ الدَّرْسَ]
+      translations: {pl: pisać}
+      expected: false # the known example already shows it, only the vowel signs differ

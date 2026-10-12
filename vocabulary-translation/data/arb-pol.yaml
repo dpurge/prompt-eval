@@ -4,6 +4,9 @@
   transcription: mubarmiǧ
   translation: programista
   notes:
+  usage: مبرمج في شركة كبيرة
+  examples:
+    - مُبَرْمِجٌ مَاهِرٌ
 - id: arb-pol-002
   phrase: نِهَايَةٌ
   grammar: N f sg
@@ -28,3 +31,11 @@
   transcription: ḥāsūb maḥmūl
   translation: laptop
   notes:
+- id: arb-pol-006
+  phrase: فِيهِ
+  grammar: Prep
+  transcription: fīhi
+  translation: w nim
+  notes:
+  usage: الكتاب فيه صور
+  rewrite: فِي

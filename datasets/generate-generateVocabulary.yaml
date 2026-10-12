@@ -1,9 +1,9 @@
 # ai.Service.Generate "generate_vocabulary" calls (phraseforge/internal/
 # generate): Source language is the language code, Target language the
-# sentinel "generate_vocabulary" (so the translation language is up to the
-# model), content type text. Checks: every line is "phrase {grammar}
-# [transcription] = translation" with optional parts, no numbering, at least
-# minItems lines, most phrases occur in the text.
+# sentinel "generate_vocabulary", content type text. Checks: every line is
+# "phrase {grammar} [transcription] | usage" with optional parts, no
+# numbering, at least minItems lines, most phrases occur in the text, most
+# lines carry a short usage made of words of the text.
 - id: deu-cafe
   language: deu
   target: generate_vocabulary

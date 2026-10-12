@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Kielitoimiston sanakirja lists it:
+- Nouns and adjectives: nominative singular (koira, not koiran or koiria); never a case form, possessive suffix or clitic (-kin, -kaan, -han, -ko).
+- Verbs: the first infinitive (A-infinitive) without a personal ending: puhua, nähdä, olla. Not the 1st person singular and not the negative form.
+- Consonant gradation is resolved in the headword: kauppa, not kaupan; lukea, not luen.
+- Spelling: ä, ö, å kept; compound words written together, lower case except names.
+
+Examples (found in text -> phrase):
+koiran -> koira
+puhun -> puhua
+kaupassakin -> kauppa
+pienempiä -> pieni

@@ -27,6 +27,20 @@ providers:
             type: string
           notes:
             type: [string, 'null']
+          example:
+            type: [string, 'null']
+          newSense:
+            type: [string, 'null']
+          rewrite:
+            type: [object, 'null']
+            required: [phrase]
+            properties:
+              phrase:
+                type: string
+              grammar:
+                type: [string, 'null']
+              transcription:
+                type: [string, 'null']
 
 defaultTest:
   assert:

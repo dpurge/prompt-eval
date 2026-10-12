@@ -1,8 +1,8 @@
 // Keeps phraseforge's embedded copy of the default prompts, its reply schemas
-// and its context windows identical to what the eval tests. prompt/default is
+// and its context windows identical to what the eval tests. prompt/phraseforge/default is
 // the source of truth for the default system prompts and snippets.
 //
-//   node scripts/sync-prompts.js          copy prompt/default into phraseforge's
+//   node scripts/sync-prompts.js          copy prompt/phraseforge/default into phraseforge's
 //                                         internal/config/prompts/default
 //   node scripts/sync-prompts.js --check  compare instead of writing: the
 //                                         embedded copy, each suite's reply
@@ -26,7 +26,7 @@ const root = path.join(__dirname, "..");
 const phraseforgeDir = path.resolve(root, process.env.PHRASEFORGE_DIR || "../k8s-lab/phraseforge");
 const helmValues = path.resolve(root, process.env.HELM_VALUES || "../jdp-helm/jdp-frontend/values.yaml");
 
-const promptDefaultDir = path.join(root, "prompt", "default");
+const promptDefaultDir = path.join(root, "prompt", "phraseforge", "default");
 const embeddedDir = path.join(phraseforgeDir, "internal", "config", "prompts", "default");
 const promptFile = (name) => path.join(promptDefaultDir, "system", `${name}.txt`);
 
@@ -40,10 +40,14 @@ const SUITES = [
 const SCHEMA_ONLY = [
   { config: "correction/vocabulary.yaml", goSchema: "VocabularyItemSchema" },
   { config: "correction/models.yaml", goSchema: "ModelsItemSchema" },
+  { config: "check-vocabulary/promptfooconfig.yaml", goSchema: "CheckVocabularySchema", goFile: "check.go" },
+  { config: "review-vocabulary/promptfooconfig.yaml", goSchema: "ReviewVocabularySchema", goFile: "review.go" },
+  { config: "review-transcription/promptfooconfig.yaml", goSchema: "ReviewTranscriptionSchema", goFile: "review_text.go" },
+  { config: "review-translation/promptfooconfig.yaml", goSchema: "ReviewTranslationSchema", goFile: "review_text.go" },
 ];
 
 // Purposes called through ai.Service.Generate: the system prompt is
-// prompt/default/system/<promptName>.txt, num_ctx comes from the purpose's numCtx.
+// prompt/phraseforge/default/system/<promptName>.txt, num_ctx comes from the purpose's numCtx.
 const GENERATE_PURPOSES = [
   { key: "translation", promptName: "generate-translation", goField: "Translation" },
   { key: "transcription", promptName: "generate-transcription", goField: "Transcription" },
@@ -116,11 +120,11 @@ if (!check) {
     const copy = path.join(embeddedDir, file);
     if (!fs.existsSync(copy)) problems.push(`${embeddedDir}/${file} is missing (run npm run sync-prompts)`);
     else if (!fs.readFileSync(copy).equals(fs.readFileSync(path.join(promptDefaultDir, file)))) {
-      problems.push(`${embeddedDir}/${file} differs from prompt/default/${file} (byte for byte; run npm run sync-prompts)`);
+      problems.push(`${embeddedDir}/${file} differs from prompt/phraseforge/default/${file} (byte for byte; run npm run sync-prompts)`);
     }
   }
   for (const file of embeddedFiles.filter((f) => !sourceFiles.includes(f))) {
-    problems.push(`${embeddedDir}/${file} has no counterpart in prompt/default (run npm run sync-prompts)`);
+    problems.push(`${embeddedDir}/${file} has no counterpart in prompt/phraseforge/default (run npm run sync-prompts)`);
   }
 }
 
@@ -128,12 +132,12 @@ if (!check) {
 function checkPrompt(promptName, helmEntry, label) {
   const file = promptFile(promptName);
   if (!fs.existsSync(file)) {
-    problems.push(`prompt/default/system/${promptName}.txt is missing`);
+    problems.push(`prompt/phraseforge/default/system/${promptName}.txt is missing`);
     return;
   }
   const deployed = helmEntry && typeof helmEntry.prompt === "string" ? helmEntry.prompt : null;
   if (deployed !== null && !sameText(deployed, fs.readFileSync(file, "utf8"))) {
-    notes.push(`${label}: the deployed Helm prompt differs from prompt/default/system/${promptName}.txt; production uses the Helm one`);
+    notes.push(`${label}: the deployed Helm prompt differs from prompt/phraseforge/default/system/${promptName}.txt; production uses the Helm one`);
   }
 }
 
@@ -156,7 +160,30 @@ if (check) {
   }
 
   // Suites that embed a reply schema without owning a prompt file.
-  for (const extra of SCHEMA_ONLY) checkSchema(extra.config, extra.goSchema);
+  for (const extra of SCHEMA_ONLY) checkSchema(extra.config, extra.goSchema, extra.goFile);
+
+  // The check-vocabulary purpose has its own suite rather than a generate/ one.
+  checkPrompt("check-vocabulary", helm && helm.checkVocabulary, "checkVocabulary");
+  const checkNumCtx = yaml.parse(fs.readFileSync(path.join(root, "check-vocabulary", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
+  const goCheckNumCtx = goNumCtx(configGo, "CheckVocabulary");
+  if (checkNumCtx !== goCheckNumCtx) problems.push(`check-vocabulary/promptfooconfig.yaml num_ctx is ${checkNumCtx}, the Go default is ${goCheckNumCtx}`);
+
+  // The review-vocabulary purpose likewise.
+  checkPrompt("review-vocabulary", helm && helm.reviewVocabulary, "reviewVocabulary");
+  const reviewNumCtx = yaml.parse(fs.readFileSync(path.join(root, "review-vocabulary", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
+  const goReviewNumCtx = goNumCtx(configGo, "ReviewVocabulary");
+  if (reviewNumCtx !== goReviewNumCtx) problems.push(`review-vocabulary/promptfooconfig.yaml num_ctx is ${reviewNumCtx}, the Go default is ${goReviewNumCtx}`);
+
+  // The review-transcription purpose likewise.
+  checkPrompt("review-transcription", helm && helm.reviewTranscription, "reviewTranscription");
+  const reviewReviewTranscriptionNumCtx = yaml.parse(fs.readFileSync(path.join(root, "review-transcription", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
+  const goReviewReviewTranscriptionNumCtx = goNumCtx(configGo, "ReviewTranscription");
+  if (reviewReviewTranscriptionNumCtx !== goReviewReviewTranscriptionNumCtx) problems.push(`review-transcription/promptfooconfig.yaml num_ctx is ${reviewReviewTranscriptionNumCtx}, the Go default is ${goReviewReviewTranscriptionNumCtx}`);
+  // The review-translation purpose likewise.
+  checkPrompt("review-translation", helm && helm.reviewTranslation, "reviewTranslation");
+  const reviewReviewTranslationNumCtx = yaml.parse(fs.readFileSync(path.join(root, "review-translation", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
+  const goReviewReviewTranslationNumCtx = goNumCtx(configGo, "ReviewTranslation");
+  if (reviewReviewTranslationNumCtx !== goReviewReviewTranslationNumCtx) problems.push(`review-translation/promptfooconfig.yaml num_ctx is ${reviewReviewTranslationNumCtx}, the Go default is ${goReviewReviewTranslationNumCtx}`);
 
   // The follow-up turn the correction suites send must be the one phraseforge sends.
   const retryGo = path.join(phraseforgeDir, "internal", "ai", "retry.go");
@@ -174,10 +201,10 @@ if (check) {
   console.log("embedded prompts, schemas and context windows match phraseforge");
 }
 
-function checkSchema(configFile, goSchemaName) {
-  const goSchema = JSON.parse(goString(responseGo, "var", goSchemaName));
+function checkSchema(configFile, goSchemaName, goFile = "itemresponse.go") {
+  const goSchema = JSON.parse(goString(path.join(path.dirname(responseGo), goFile), "var", goSchemaName));
   if (JSON.stringify(sortKeys(schemaOf(configFile))) !== JSON.stringify(sortKeys(goSchema))) {
-    problems.push(`${configFile} reply schema differs from ${goSchemaName} in itemresponse.go`);
+    problems.push(`${configFile} reply schema differs from ${goSchemaName} in ${goFile}`);
   }
 }
 

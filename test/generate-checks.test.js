@@ -93,14 +93,14 @@ test("processDialog: one line per turn, with the same keep/drop rules", () => {
 const vocabVars = { content: "Ich möchte einen Kaffee bestellen. Der Koffer ist schwer.", minItems: 3 };
 
 test("generateVocabulary: item lines pass; chatter, list markers, empty parts and invented phrases fail", () => {
-  const good = "Kaffee {N m} = kawa\nKoffer {N m} = walizka\nbestellen {V} = zamawiać";
+  const good = "Kaffee {N m} | einen Kaffee\nKoffer {N m} | Der Koffer ist schwer\nbestellen {V} | einen Kaffee bestellen";
   assert.equal(checkGenerate("generateVocabulary", good, vocabVars).pass, true);
   assert.match(checkGenerate("generateVocabulary", "1. Kaffee = kawa\n2. Koffer = walizka\n3. bestellen = zamawiać", vocabVars).reason, /noListMarkers/);
   assert.match(checkGenerate("generateVocabulary", "Kaffee {} = kawa\nKoffer = walizka\nbestellen = zamawiać", vocabVars).reason, /lineFormat/);
   assert.match(checkGenerate("generateVocabulary", "Kaffee = kawa", vocabVars).reason, /enoughItems/);
   assert.match(checkGenerate("generateVocabulary", "Hund = pies\nKatze = kot\nHaus = dom", vocabVars).reason, /phrasesFromText/);
   assert.match(checkGenerate("generateVocabulary", "Here are the items:\n" + good, vocabVars).reason, /noPreamble/);
-  assert.equal(checkGenerate("generateVocabulary", "名字 {N} [míngzi] = imię\n学生 [xuéshēng] = uczeń\n好 = dobry", { content: "名字 学生 好", minItems: 3 }).pass, true);
+  assert.equal(checkGenerate("generateVocabulary", "名字 {N} [míngzi] | 名字 学生\n学生 [xuéshēng] | 学生 好\n好 | 学生 好", { content: "名字 学生 好", minItems: 3 }).pass, true);
 });
 
 const modelVars = { content: "Ich möchte einen Kaffee bestellen. Die Lektion beginnt um acht Uhr.", minItems: 3 };
@@ -142,4 +142,35 @@ test("generateModels: Chinese phrases are matched to the text by character", () 
   assert.equal(checkGenerate("generateModels", reply, vars).pass, true);
   const unrelated = "天 [tiān] = sky\n天空 [tiānkōng] = the sky\n天空很蓝 [tiānkōng hěn lán] = the sky is blue";
   assert.match(checkGenerate("generateModels", unrelated, vars).reason, /usesTextVocabulary/);
+});
+
+const vocabularyVars = { content: "كتب الطالب الدرس في المدرسة.", minItems: 3, needsTranscription: false };
+const withUsage = [
+  "كَتَبَ {V} | كتب الطالب الدرس",
+  "طَالِبٌ {N m sg} | كتب الطالب",
+  "دَرْسٌ {N m sg} | الدرس في المدرسة",
+  "مَدْرَسَةٌ {N f sg} | في المدرسة",
+].join("\n");
+
+test("generateVocabulary: lines with a short usage taken from the text pass", () => {
+  const r = checkGenerate("generateVocabulary", withUsage, vocabularyVars);
+  assert.equal(r.pass, true, r.reason);
+});
+
+test("generateVocabulary: a legacy '= translation' before the usage still parses", () => {
+  const r = checkGenerate("generateVocabulary", withUsage.split("\n").map((l) => l.replace(" | ", " = x | ")).join("\n"), vocabularyVars);
+  assert.doesNotMatch(r.reason ?? "", /lineFormat/);
+});
+
+test("generateVocabulary: lines without a usage, a long usage and an invented usage fail their own checks", () => {
+  const noUsage = checkGenerate("generateVocabulary", "كَتَبَ {V}\nطَالِبٌ {N m sg}\nدَرْسٌ {N m sg}", vocabularyVars);
+  assert.match(noUsage.reason, /usagePresent/);
+  const long = checkGenerate("generateVocabulary", withUsage + "\nمَدْرَسَةٌ {N f sg} | " + "ك".repeat(81), vocabularyVars);
+  assert.match(long.reason, /usageShort/);
+  const invented = checkGenerate("generateVocabulary", [
+    "كَتَبَ {V} | ذهب المعلم إلى السوق",
+    "طَالِبٌ {N m sg} | يدرس الطلاب كثيرا",
+    "دَرْسٌ {N m sg} | الدرس في المدرسة",
+  ].join("\n"), vocabularyVars);
+  assert.match(invented.reason, /usageFromText/);
 });

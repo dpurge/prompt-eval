@@ -1,0 +1,11 @@
+The phrase is the dictionary headword as a Mandarin dictionary lists it:
+- Chinese has no inflection: never add particles or aspect markers to a verb (吃, not 吃了 or 吃过) and no plural 们 on a noun (学生, not 学生们); 我们, 你们 and 他们 are headwords of their own.
+- Prefer the word (词), usually 1-4 characters, not a whole clause; a verb-object compound listed in dictionaries is kept together (说话, 吃饭).
+- Reduplicated or resultative forms are given as the base word (看, not 看看; 看见 only when it is a headword).
+- Use the script of the lesson (Simplified or Traditional) consistently and do not mix them; no punctuation, no measure word attached to the noun.
+
+Examples (found in text -> phrase):
+吃了 -> 吃
+学生们 -> 学生
+看看 -> 看
+一本书 -> 书

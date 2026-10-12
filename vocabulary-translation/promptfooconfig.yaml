@@ -1,7 +1,7 @@
 description: Vocabulary translation
 
 prompts:
-  - file://../prompt/default/system/generate-vocabulary-item.txt
+  - file://../prompt/phraseforge/default/system/generate-vocabulary-item.txt
 
 providers:
   - id: ollama:chat:gemma4:12b
@@ -26,6 +26,20 @@ providers:
             type: string
           notes:
             type: [string, 'null']
+          example:
+            type: [string, 'null']
+          newSense:
+            type: [string, 'null']
+          rewrite:
+            type: [object, 'null']
+            required: [phrase]
+            properties:
+              phrase:
+                type: string
+              grammar:
+                type: [string, 'null']
+              transcription:
+                type: [string, 'null']
 
 defaultTest:
   assert:

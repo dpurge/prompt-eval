@@ -18,6 +18,7 @@ function fixture() {
   put("default/system/item.txt", "G={{grammarPrompt}} T={{transcriptionPrompt}} {{phrase}} {{sourceLanguage}}>{{targetLanguage}}\n");
   put("default/snippet/grammar.txt", "default grammar\n");
   put("default/snippet/transcription.txt", "default transcription\n");
+  put("default/snippet/dictionary.txt", "default dictionary\n");
   put("lang/deu/snippet/grammar.txt", "deu grammar\n");
   put("lang/arb/system/title.txt", "Arabic title\n");
   put("lang/cmn/snippet/transcription.txt", "pinyin\r\nrules\r\n");
@@ -59,8 +60,14 @@ test("snippets are read with LF line endings", () => {
 
 test("snippets returns the placeholder values of a language", () => {
   const { prompts } = fixture();
-  assert.deepEqual(prompts.snippets("deu", { transcription: true }), { grammarPrompt: "deu grammar\n", transcriptionPrompt: "default transcription\n" });
-  assert.deepEqual(prompts.snippets("deu"), { grammarPrompt: "deu grammar\n", transcriptionPrompt: "" });
+  assert.deepEqual(prompts.snippets("deu", { transcription: true }), { grammarPrompt: "deu grammar\n", transcriptionPrompt: "default transcription\n", dictionaryPrompt: "" });
+  assert.deepEqual(prompts.snippets("deu"), { grammarPrompt: "deu grammar\n", transcriptionPrompt: "", dictionaryPrompt: "" });
+});
+
+test("a dictionary snippet falls back to the default only when asked", () => {
+  const { prompts } = fixture();
+  assert.equal(prompts.snippet("dictionary", "deu"), "");
+  assert.equal(prompts.snippet("dictionary", "deu", { useDefault: true }), "default dictionary\n");
 });
 
 test("renderPrompt fills the snippets and the item vars", () => {
@@ -84,12 +91,12 @@ test("an unknown snippet kind or an unsafe name is refused", () => {
 
 test("the real prompt/ tree resolves every default and language file", () => {
   const real = require("../lib/prompts");
-  const root = path.join(__dirname, "..", "prompt");
+  const root = path.join(__dirname, "..", "prompt", "phraseforge");
   for (const file of fs.readdirSync(path.join(root, "default", "system"))) {
     assert.ok(real.systemPrompt(path.basename(file, ".txt")).length > 0, file);
   }
   for (const lang of fs.readdirSync(path.join(root, "lang"))) {
-    for (const kind of ["grammar", "transcription"]) {
+    for (const kind of ["grammar", "transcription", "dictionary"]) {
       const exists = fs.existsSync(path.join(root, "lang", lang, "snippet", `${kind}.txt`));
       assert.equal(real.snippet(kind, lang).length > 0, exists, `${lang}/${kind}`);
     }
