@@ -6,8 +6,7 @@ const path = require("path");
 const { createPrompts } = require("../lib/prompts");
 
 // A throwaway prompt/ tree: default title prompt and snippets, German with
-// its own grammar snippet, Arabic overriding the title prompt, Chinese with
-// a CRLF transcription snippet.
+// its own grammar snippet, Chinese with a CRLF transcription snippet.
 function fixture() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "prompts-"));
   const put = (file, text) => {
@@ -20,25 +19,18 @@ function fixture() {
   put("default/snippet/transcription.txt", "default transcription\n");
   put("default/snippet/dictionary.txt", "default dictionary\n");
   put("lang/deu/snippet/grammar.txt", "deu grammar\n");
-  put("lang/arb/system/title.txt", "Arabic title\n");
   put("lang/cmn/snippet/transcription.txt", "pinyin\r\nrules\r\n");
   return { dir, prompts: createPrompts(dir) };
 }
 
-test("a language without its own system prompt gets the default, byte for byte", () => {
+test("a system prompt is returned byte for byte", () => {
   const { prompts } = fixture();
-  assert.equal(prompts.systemPrompt("title", "deu"), "Default title\n");
   assert.equal(prompts.systemPrompt("title"), "Default title\n");
-});
-
-test("a language's own system prompt replaces the default", () => {
-  const { prompts } = fixture();
-  assert.equal(prompts.systemPrompt("title", "arb"), "Arabic title\n");
 });
 
 test("a missing default system prompt names the file it expected", () => {
   const { dir, prompts } = fixture();
-  assert.throws(() => prompts.systemPrompt("nope", "deu"), new RegExp(`system prompt "nope" not found: expected ${path.join(dir, "default", "system", "nope.txt")}`));
+  assert.throws(() => prompts.systemPrompt("nope"), new RegExp(`system prompt "nope" not found: expected ${path.join(dir, "default", "system", "nope.txt")}`));
 });
 
 test("a language's own snippet replaces the default", () => {
@@ -85,8 +77,8 @@ test("renderPrompt never expands a placeholder inside a value", () => {
 test("an unknown snippet kind or an unsafe name is refused", () => {
   const { prompts } = fixture();
   assert.throws(() => prompts.snippet("tags", "deu"), /unknown snippet kind "tags"/);
-  assert.throws(() => prompts.systemPrompt("../secret", "deu"), /invalid prompt name/);
-  assert.throws(() => prompts.systemPrompt("title", "../deu"), /invalid language/);
+  assert.throws(() => prompts.systemPrompt("../secret"), /invalid prompt name/);
+  assert.throws(() => prompts.snippet("grammar", "../deu"), /invalid language/);
 });
 
 test("the real prompt/ tree resolves every default and language file", () => {
