@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Slovnyk ukrainskoi movy (СУМ-11) lists it:
+- Nouns: the nominative singular (собака, будинок), not an oblique case or the plural.
+- Verbs: the infinitive (говорити); -ся only for a verb that is always reflexive (сміятися). The two aspects are separate headwords.
+- Adjectives: the masculine nominative singular (маленький, not маленька).
+- Spelling: ї є і ґ kept.
+
+Examples (found in text -> phrase):
+собаки -> собака
+говорила -> говорити
+маленька -> маленький
+сміялися -> сміятися

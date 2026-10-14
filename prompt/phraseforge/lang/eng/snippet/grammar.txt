@@ -1,0 +1,20 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun: dog, house
+  V = Verb: speak, give up
+  Adj = Adjective: small, good
+  Adv = Adverb: yesterday, well
+  Pron = Pronoun: I, she
+  Prep = Preposition: in, with
+  Conj = Conjunction: and, but
+  Num = Numeral: two, three
+  Part = Particle: not, to
+  Interj = Interjection: oh, ouch
+  Ph = Fixed phrase or idiom
+
+Examples (phrase -> tags):
+dog -> N
+give up -> V
+small -> Adj
+quickly -> Adv

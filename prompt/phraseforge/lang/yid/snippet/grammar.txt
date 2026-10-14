@@ -1,30 +1,29 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun: דער הונט, די פֿרוי
+  V = Verb: רעדן, זײַן
+  Adj = Adjective: קליין, גוט
+  Adv = Adverb: נעכטן, גוט
+  Pron = Pronoun: איך, זי
+  Prep = Preposition: אין, מיט
+  Conj = Conjunction: און, אָבער
+  Num = Numeral: צוויי, דרײַ
+  Part = Particle: נישט, דען
+  Interj = Interjection: אוי, ווײַ
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine (דער)
   f = feminine (די)
   n = neuter (דאָס)
 
-After verb: nothing (irreg for an irregular verb)
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 דער הונט -> N m
+די פֿרוי -> N f
 דאָס הויז -> N n
-די פרוי -> N f
 רעדן -> V
-זיין -> V irreg
 קליין -> Adj

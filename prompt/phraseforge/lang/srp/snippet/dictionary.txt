@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Rečnik srpskoga jezika (Matica srpska) lists it:
+- Nouns: the nominative singular (пас, жена, село), not an oblique case or the plural.
+- Verbs: the infinitive (говорити); се only for a verb that is always reflexive (смејати се). The two aspects are separate headwords.
+- Adjectives: the masculine nominative singular, indefinite (мали, not мала).
+- Script as the lesson writes it (Cyrillic).
+
+Examples (found in text -> phrase):
+пса -> пас
+говорио -> говорити
+мала -> мали
+смејао се -> смејати се

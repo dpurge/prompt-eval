@@ -1,0 +1,11 @@
+Transcribe using ULY (Uyghur Latin Yéziqi), read the way a Uyghur speaker says it aloud. Keep every diacritic.
+
+Vowels: ئا a, ئە e, ئى i, ئو o, ئۇ u, ئۆ ö, ئۈ ü, ئې é.
+Consonants: ب b, پ p, ت t, ج j, چ ch, خ x, د d, ر r, ز z, ژ zh, س s, ش sh, غ gh, ف f, ق q, ك k, گ g, ڭ ng, ل l, م m, ن n, ھ h, ۋ w, ي y.
+
+Reading rules:
+- The vowels are always written in Uyghur script: write every one of them.
+- A hamza ئ at the start of a word only carries the vowel and is not written.
+- Write the pronunciation of the word with the vowel harmony of the word, not the spelling of a Persian or Arabic loan.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

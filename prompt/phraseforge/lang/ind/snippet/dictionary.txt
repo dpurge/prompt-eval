@@ -1,0 +1,10 @@
+The phrase is the dictionary form as Kamus Besar Bahasa Indonesia (KBBI) lists it:
+- Nouns: the singular, without reduplication or a suffix (anjing, not anjing-anjing; rumah, not rumahnya).
+- Verbs: the base word (baca, tulis), not the form with me-, ber-, di-, -kan or -i, unless the derived word has a meaning of its own (belajar, mengajar).
+- Adjectives: the base form (kecil, not terkecil or kekecilan).
+
+Examples (found in text -> phrase):
+membaca -> baca
+anjing-anjing -> anjing
+ditulis -> tulis
+rumahnya -> rumah

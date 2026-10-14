@@ -1,0 +1,20 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (ot): uy, kitob
+  V = Verb (fe'l): gapirmoq, ko'rmoq
+  Adj = Adjective (sifat): katta, yaxshi
+  Adv = Adverb (ravish): bugun, juda
+  Pron = Pronoun (olmosh): men, u
+  Post = Postposition (ko'makchi): uchun, bilan
+  Conj = Conjunction (bog'lovchi): va, lekin
+  Num = Numeral (son): ikki, uch
+  Part = Particle (yuklama): ham, -mi
+  Interj = Interjection (undov): oh, voy
+  Ph = Fixed phrase or idiom
+
+Examples (phrase -> tags):
+uy -> N
+gapirmoq -> V
+katta -> Adj
+uchun -> Post

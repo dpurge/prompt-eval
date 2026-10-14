@@ -18,6 +18,7 @@
     "review-transcription": "promptfoo eval -c review-transcription/promptfooconfig.yaml",
     "review-transcription:smoke": "SMOKE=1 promptfoo eval -c review-transcription/promptfooconfig.yaml",
     "review-translation": "promptfoo eval -c review-translation/promptfooconfig.yaml",
+    "review-models": "promptfoo eval -c review-models/promptfooconfig.yaml",
     "review-translation:smoke": "SMOKE=1 promptfoo eval -c review-translation/promptfooconfig.yaml",
     "correction-vocabulary": "promptfoo eval -c correction/vocabulary.yaml",
     "correction-vocabulary:smoke": "SMOKE=1 promptfoo eval -c correction/vocabulary.yaml",

@@ -1,0 +1,34 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (podstatné jméno): pes, žena
+  V = Verb (sloveso): mluvit, vidět
+  Adj = Adjective (přídavné jméno): malý, dobrý
+  Adv = Adverb (příslovce): včera, dobře
+  Pron = Pronoun (zájmeno): já, ona
+  Prep = Preposition (předložka): v, s
+  Conj = Conjunction (spojka): a, ale
+  Num = Numeral (číslovka): dva, tři
+  Part = Particle (částice): ne, až
+  Interj = Interjection (citoslovce): ach, fuj
+  Ph = Fixed phrase or idiom
+
+Gender, after a noun (always lower case):
+  m = masculine
+  f = feminine
+  n = neuter
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Aspect, after a verb (always lower case):
+  impf = imperfective
+  pf = perfective
+
+Examples (phrase -> tags):
+pes -> N m
+žena -> N f
+město -> N n
+mluvit -> V impf
+uvidět -> V pf
+malý -> Adj

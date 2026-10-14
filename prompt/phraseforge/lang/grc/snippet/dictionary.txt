@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Liddell-Scott-Jones lexicon (LSJ) lists it:
+- Nouns: the nominative singular with the article that shows the gender (ὁ λόγος, ἡ οἰκία, τὸ παιδίον); no article for a name.
+- Verbs: the 1st person singular present active indicative (λύω, λέγω); a deponent verb in its middle or passive form (ἔρχομαι). Not the infinitive, the aorist or another tense.
+- Adjectives: the masculine nominative singular (ἀγαθός, not ἀγαθή).
+- Accents and breathings kept; no elision or crasis (not δ' for δέ).
+
+Examples (found in text -> phrase):
+τοῦ λόγου -> ὁ λόγος
+ἔλυσε -> λύω
+ἀγαθῆς -> ἀγαθός
+λέγειν -> λέγω

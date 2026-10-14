@@ -1,0 +1,11 @@
+The phrase is the dictionary form as a Levantine Arabic dictionary lists it:
+- Nouns and adjectives: the singular without the article (كتاب, not الكتاب); an adjective in the masculine singular (كبير, not كبيرة). A broken plural only when it is a separate headword.
+- Verbs: the 3rd person masculine singular perfect (كتب), never a form with بـ, عم, رح or a pronoun ending.
+- Keep the colloquial word as the lesson spells it; do not replace it with the Standard Arabic one (بدي, not أريد).
+- No attached prepositions, conjunctions or pronoun suffixes (not وكتابه).
+
+Examples (found in text -> phrase):
+البنات -> بنت
+بيكتبوا -> كتب
+كتابه -> كتاب
+كبيرة -> كبير

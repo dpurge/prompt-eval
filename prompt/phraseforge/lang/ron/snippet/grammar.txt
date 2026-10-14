@@ -1,30 +1,29 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (substantiv): câine, casă
+  V = Verb (verb): vorbi, vedea
+  Adj = Adjective (adjectiv): mic, bun
+  Adv = Adverb (adverb): ieri, bine
+  Pron = Pronoun (pronume): eu, ea
+  Prep = Preposition (prepoziție): în, cu
+  Conj = Conjunction (conjuncție): și, dar
+  Num = Numeral (numeral): doi, trei
+  Part = Particle (particulă): nu, să
+  Interj = Interjection (interjecție): ah, vai
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
   n = neuter
 
-After verb: nothing (irreg for an irregular verb)
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 câine -> N m
 casă -> N f
 copil -> N n
-a vorbi -> V
-a fi -> V irreg
+vorbi -> V
 mic -> Adj

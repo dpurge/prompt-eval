@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Uyghur explanatory dictionary (ئۇيغۇر تىلىنىڭ ئىزاھلىق لۇغىتى) lists it:
+- Nouns: the bare singular (ئۆي, not ئۆيلىرىمىزدە).
+- Verbs: the infinitive in -ماق or -مەك (ئوقۇماق, not ئوقۇدۇم).
+- Adjectives: the base form (چوڭ).
+- Arabic script as the lesson writes it.
+
+Examples (found in text -> phrase):
+ئۆيلىرىمىزدە -> ئۆي
+ئوقۇدۇم -> ئوقۇماق
+چوڭلار -> چوڭ
+كىتابلار -> كىتاب

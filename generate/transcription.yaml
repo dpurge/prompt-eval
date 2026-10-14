@@ -12,6 +12,7 @@ providers:
     label: ollama-gemma4-12b
     config:
       think: false
+      num_ctx: 4096
 
 defaultTest:
   assert:

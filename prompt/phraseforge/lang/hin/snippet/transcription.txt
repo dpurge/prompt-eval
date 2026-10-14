@@ -1,0 +1,11 @@
+Transcribe using IAST, read the way a Hindi speaker says it aloud. Keep every diacritic.
+
+Vowels: अ a, आ ā, इ i, ई ī, उ u, ऊ ū, ऋ ṛ, ए e, ऐ ai, ओ o, औ au.
+Consonants: क k, ख kh, ग g, घ gh, ङ ṅ, च c, छ ch, ज j, झ jh, ञ ñ, ट ṭ, ठ ṭh, ड ḍ, ढ ḍh, ण ṇ, त t, थ th, द d, ध dh, न n, प p, फ ph, ब b, भ bh, म m, य y, र r, ल l, व v, श ś, ष ṣ, स s, ह h; ड़ ṛ, ढ़ ṛh; the Persian-Arabic sounds क़ q, ख़ x, ग़ ġ, ज़ z, फ़ f.
+
+Reading rules:
+- The inherent a is not said at the end of a word or in many positions between consonants: कमल -> kamal, लड़का -> laṛkā, समझना -> samajhnā.
+- Anusvāra is the nasal of the next consonant's class (n before t, d; m before p, b; ṅ before k, g; ñ before c, j; ṇ before ṭ, ḍ): हिंदी -> hindī, कंबल -> kambal. Chandrabindu is a tilde over the vowel: आँख -> ā̃kh.
+- Write the nukta letters as listed, and the vowel signs as long vowels: की -> kī, कू -> kū.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only: the danda । is a full stop.

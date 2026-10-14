@@ -1,33 +1,34 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (іменник): собака, будинок
+  V = Verb (дієслово): говорити, побачити
+  Adj = Adjective (прикметник): маленький, добрий
+  Adv = Adverb (прислівник): вчора, добре
+  Pron = Pronoun (займенник): я, вона
+  Prep = Preposition (прийменник): в, з
+  Conj = Conjunction (сполучник): і, але
+  Num = Numeral (числівник): два, три
+  Part = Particle (частка): не, ж
+  Interj = Interjection (вигук): ах, ой
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
   n = neuter
-- an for an animate masculine noun
 
-After verb:
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Aspect, after a verb (always lower case):
   impf = imperfective
   pf = perfective
-  irreg = irregular
-After adjective: nothing
 
 Examples (phrase -> tags):
 собака -> N f
 будинок -> N m
+село -> N n
 говорити -> V impf
 побачити -> V pf
 маленький -> Adj

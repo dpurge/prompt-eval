@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Weinreich's Modern English-Yiddish Yiddish-English Dictionary, in YIVO spelling lists it:
+- Nouns: the singular with דער, די or דאָס, which shows the gender (דער הונט, די פֿרוי, דאָס הויז); the plural only for a plural-only noun.
+- Verbs: the infinitive in -ן (רעדן, זײַן), not a finite form.
+- Adjectives: the base form (קליין, not קליינע).
+- Diacritics kept (אַ, אָ, פֿ, בֿ).
+
+Examples (found in text -> phrase):
+די הינט -> דער הונט
+ער רעדט -> רעדן
+קליינע -> קליין
+ביכער -> דאָס בוך

@@ -1,0 +1,34 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (rzeczownik): pies, kobieta
+  V = Verb (czasownik): mówić, widzieć
+  Adj = Adjective (przymiotnik): mały, dobry
+  Adv = Adverb (przysłówek): wczoraj, dobrze
+  Pron = Pronoun (zaimek): ja, ona
+  Prep = Preposition (przyimek): w, z
+  Conj = Conjunction (spójnik): i, ale
+  Num = Numeral (liczebnik): dwa, trzy
+  Part = Particle (partykuła): nie, już
+  Interj = Interjection (wykrzyknik): ach, oj
+  Ph = Fixed phrase or idiom
+
+Gender, after a noun (always lower case):
+  m = masculine
+  f = feminine
+  n = neuter
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Aspect, after a verb (always lower case):
+  impf = imperfective
+  pf = perfective
+
+Examples (phrase -> tags):
+pies -> N m
+kobieta -> N f
+dziecko -> N n
+mówić -> V impf
+zobaczyć -> V pf
+mały -> Adj

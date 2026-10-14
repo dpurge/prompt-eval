@@ -1,36 +1,28 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  Ph = Phrase (fixed expression or idiom)
-  N = Noun (sustantivo): casa, libro
+  N = Noun (sustantivo): el perro, la casa
   V = Verb (verbo): hablar, comer
   Adj = Adjective (adjetivo): grande, bueno
   Adv = Adverb (adverbio): ayer, bien
   Pron = Pronoun (pronombre): yo, ella
-  Art = Article (artículo): el, la, los, las, un, una
-  Det = Determiner (determinante): este, mi, cada
-  Num = Numeral (numeral): dos, tres
   Prep = Preposition (preposición): de, en, con
-  Conj = Conjunction (conjunción): y, pero, o
-  Int = Interrogative: quién, qué, cuándo
-  Neg = Negation: no, tampoco
-  Aux = Auxiliary verb: haber (in compound tenses), ser (in passive constructions)
-  Modal = Modal verb / expression: poder, deber
-  Part = Particle: sí, no
+  Conj = Conjunction (conjunción): y, pero
+  Num = Numeral (numeral): dos, tres
+  Part = Particle (partícula): no, sí
   Interj = Interjection (interjección): ¡ay!, ¡uf!
-  PropN = Proper noun (nombre propio): Madrid, María
+  Ph = Fixed phrase or idiom
 
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
 
-- Number (always lower case):
-  sg = singular
+Number, after a noun, only for a plural form listed on its own (always lower case):
   pl = plural
 
 Examples (phrase -> tags):
 el perro -> N m
-las casas -> N f pl
+la casa -> N f
+las gafas -> N f pl
 hablar -> V
-tener -> V
 pequeño -> Adj

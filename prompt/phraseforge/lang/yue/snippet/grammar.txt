@@ -1,0 +1,22 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (名詞): 書, 人
+  V = Verb (動詞): 食, 去
+  Adj = Adjective (形容詞): 大, 好
+  Adv = Adverb (副詞): 好, 都
+  Pron = Pronoun (代詞): 我, 佢
+  Prep = Preposition (介詞): 喺, 同
+  Conj = Conjunction (連詞): 同, 但係
+  Num = Numeral (數詞): 一, 三
+  Part = Particle (助詞): 嘅, 咗, 嗎
+  Interj = Interjection (嘆詞): 哎, 嘩
+  Ph = Fixed phrase or idiom
+
+After noun: the measure word as a Chinese character, only if you are sure of it (never romanized)
+
+Examples (phrase -> tags):
+書 -> N 本
+狗 -> N 隻
+食 -> V
+大 -> Adj

@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the explanatory dictionary of the Kazakh language lists it:
+- Nouns: the nominative singular without case, plural or possessive endings (үй, not үйлерімізде).
+- Verbs: the infinitive in -у (сөйлеу, not сөйледі).
+- Adjectives: the base form (үлкен, not үлкенірек).
+- Cyrillic as the lesson writes it, with ә ғ қ ң ө ұ ү һ і.
+
+Examples (found in text -> phrase):
+үйлеріміздегі -> үй
+барады -> бару
+үлкенірек -> үлкен
+кітаптар -> кітап

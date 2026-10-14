@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Dictionary of Standard Modern Greek (Triantafyllidis) lists it:
+- Nouns: the nominative singular with the article that shows the gender: ο, η or το (ο σκύλος, η γυναίκα, το παιδί); no article for a name.
+- Verbs: the 1st person singular present (μιλώ, βλέπω): Greek has no infinitive. Not the aorist, the future or the passive form unless it is the only form (έρχομαι).
+- Adjectives: the masculine nominative singular (μικρός, not μικρή).
+- Monotonic spelling with one accent mark; no elision (not μ' αγαπά).
+
+Examples (found in text -> phrase):
+των παιδιών -> το παιδί
+μιλάει -> μιλώ
+μικρή -> μικρός
+είδα -> βλέπω

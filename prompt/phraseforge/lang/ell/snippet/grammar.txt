@@ -1,30 +1,29 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (ουσιαστικό): ο σκύλος, η γυναίκα
+  V = Verb (ρήμα): μιλώ, βλέπω
+  Adj = Adjective (επίθετο): μικρός, καλός
+  Adv = Adverb (επίρρημα): χθες, καλά
+  Pron = Pronoun (αντωνυμία): εγώ, αυτή
+  Prep = Preposition (πρόθεση): σε, με
+  Conj = Conjunction (σύνδεσμος): και, αλλά
+  Num = Numeral (αριθμητικό): δύο, τρία
+  Part = Particle (μόριο): να, θα
+  Interj = Interjection (επιφώνημα): α, αχ
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
   n = neuter
 
-After verb: the type A (-ω) or B (-ώ, -άω); irreg for an irregular verb
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 ο σκύλος -> N m
-το σπίτι -> N n
 η γυναίκα -> N f
-βλέπω -> V A
-μιλώ -> V B
+το παιδί -> N n
+μιλώ -> V
 μικρός -> Adj

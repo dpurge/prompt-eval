@@ -1,0 +1,27 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (daiktavardis): šuo, moteris
+  V = Verb (veiksmažodis): kalbėti, matyti
+  Adj = Adjective (būdvardis): didelis, geras
+  Adv = Adverb (prieveiksmis): vakar, gerai
+  Pron = Pronoun (įvardis): aš, ji
+  Prep = Preposition (prielinksnis): į, su
+  Conj = Conjunction (jungtukas): ir, bet
+  Num = Numeral (skaitvardis): du, trys
+  Part = Particle (dalelytė): ne, gi
+  Interj = Interjection (jaustukas): ak, oi
+  Ph = Fixed phrase or idiom
+
+Gender, after a noun (always lower case):
+  m = masculine
+  f = feminine
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Examples (phrase -> tags):
+šuo -> N m
+moteris -> N f
+kalbėti -> V
+didelis -> Adj

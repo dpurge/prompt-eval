@@ -8,6 +8,7 @@ providers:
     label: ollama-gemma4-12b
     config:
       think: false
+      num_ctx: 4096
       # Same as phraseforge: the reply schema is sent as Ollama's "format"
       # (structured output), and the is-json assertion below checks the
       # same schema (YAML anchor, defined once). It equals phraseforge's

@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Diccionario de la lengua española (DLE) lists it:
+- Nouns: the singular with el or la, which shows the gender (el perro, la casa); a feminine noun that takes el before a stressed a keeps la (la agua); the plural only for a plural-only noun (las gafas).
+- Verbs: the infinitive (hablar); the ending -se only for a verb that is always reflexive (enfrentarse, quejarse).
+- Adjectives: the masculine singular (pequeño, not pequeña).
+- Spelling: accents and ñ kept; ¿ and ¡ never in the phrase.
+
+Examples (found in text -> phrase):
+los perros -> el perro
+hablamos -> hablar
+pequeñas -> pequeño
+se enfrentan -> enfrentarse

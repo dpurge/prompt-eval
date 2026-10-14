@@ -1,0 +1,20 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (คำนาม): บ้าน, หนังสือ
+  V = Verb (คำกริยา): พูด, กิน
+  Adj = Adjective (คำคุณศัพท์): เล็ก, ดี
+  Adv = Adverb (คำวิเศษณ์): วันนี้, มาก
+  Pron = Pronoun (คำสรรพนาม): ฉัน, เขา
+  Prep = Preposition (คำบุพบท): ใน, กับ
+  Conj = Conjunction (คำสันธาน): และ, แต่
+  Num = Numeral: หนึ่ง, สาม
+  Part = Particle: ครับ, ค่ะ, นะ
+  Interj = Interjection (คำอุทาน): โอ๊ย, ว้าว
+  Ph = Fixed phrase or idiom
+
+Examples (phrase -> tags):
+บ้าน -> N
+พูด -> V
+เล็ก -> Adj
+ใน -> Prep

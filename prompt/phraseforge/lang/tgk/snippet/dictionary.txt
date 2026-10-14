@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Tajik explanatory dictionary (Фарҳанги тафсирии забони тоҷикӣ) lists it:
+- Nouns: the bare singular without the plural -ҳо or -он and without ezofa (хона, not хонаҳо or хонаи).
+- Verbs: the infinitive in -тан or -дан (гуфтан, рафтан), not гуфт or мегӯяд; a compound verb as one phrase (кор кардан).
+- Adjectives: the base form (калон, not калонтар).
+- Cyrillic as the lesson writes it, with ӣ ӯ ҳ қ ғ ҷ.
+
+Examples (found in text -> phrase):
+хонаҳо -> хона
+мегӯяд -> гуфтан
+калонтар -> калон
+китобам -> китоб

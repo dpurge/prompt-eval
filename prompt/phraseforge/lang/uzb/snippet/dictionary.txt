@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the O'zbek tilining izohli lug'ati lists it:
+- Nouns: the bare singular (uy, not uylarimizda).
+- Verbs: the infinitive in -moq (gapirmoq, not gapirdi).
+- Adjectives: the base form (katta, not kattaroq).
+- Spelling: o', g', sh, ch, ng as in the lesson.
+
+Examples (found in text -> phrase):
+uylarimizda -> uy
+gapirdi -> gapirmoq
+kattaroq -> katta
+kitoblar -> kitob

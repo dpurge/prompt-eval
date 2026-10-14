@@ -1,0 +1,10 @@
+The phrase is the dictionary form as Речник на българския език (RBE) lists it:
+- Nouns: the singular without the article (куче, not кучето or кучета).
+- Verbs: the 1st person singular present (говоря, видя): Bulgarian has no infinitive. The two aspects are separate headwords; се only for a verb that is always reflexive (смея се).
+- Adjectives: the masculine singular without the article (голям, not голямата).
+
+Examples (found in text -> phrase):
+кучетата -> куче
+говорим -> говоря
+голямата -> голям
+видях -> видя

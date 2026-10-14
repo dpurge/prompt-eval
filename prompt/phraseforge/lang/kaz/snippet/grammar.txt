@@ -1,0 +1,20 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (зат есім): үй, кітап
+  V = Verb (етістік): сөйлеу, бару
+  Adj = Adjective (сын есім): үлкен, жақсы
+  Adv = Adverb (үстеу): бүгін, жақсы
+  Pron = Pronoun (есімдік): мен, ол
+  Post = Postposition (шылау): үшін, туралы
+  Conj = Conjunction (жалғаулық): және, бірақ
+  Num = Numeral (сан есім): бір, үш
+  Part = Particle (демеулік): ма, да
+  Interj = Interjection (одағай): ой, әй
+  Ph = Fixed phrase or idiom
+
+Examples (phrase -> tags):
+үй -> N
+сөйлеу -> V
+үлкен -> Adj
+үшін -> Post

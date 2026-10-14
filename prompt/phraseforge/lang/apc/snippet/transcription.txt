@@ -1,0 +1,13 @@
+Transcribe using DIN 31635, read the way a Levantine Arabic speaker says it aloud: the colloquial pronunciation of the word, not the Standard Arabic one. Keep every diacritic.
+
+Consonants: ء ʾ, ب b, ت t, ث ṯ, ج ǧ, ح ḥ, خ ḫ, د d, ذ ḏ, ر r, ز z, س s, ش š, ص ṣ, ض ḍ, ط ṭ, ظ ẓ, ع ʿ, غ ġ, ف f, ق q, ك k, ل l, م m, ن n, ه h, و w, ي y.
+Vowels: short a, i, u; long ā, ī, ū; the diphthongs are ē and ō as spoken: بَيْت -> bēt, يَوْم -> yōm.
+
+Reading rules:
+- Write the sound the colloquial word has. Where the speaker says a glottal stop for ق write ʾ (قَلْب -> ʾalb), where he says q write q; where ث and ذ are said t or s and d or z write what is said.
+- Always write the short vowels; the text is usually not vocalized, so give the standard colloquial pronunciation of the word as a dictionary gives it. Never skip the transcription because the text has no vowel signs.
+- No case endings and no tanwīn. Tāʾ marbūṭa is written as it is spoken (-a or -e), and -t in a construct: مَدْرَسِة البَنَات -> madrasit il-banāt.
+- The article is il- (l- after a vowel) and assimilates to a sun letter: الشَّام -> iš-šām.
+- The progressive عم (ʿam), the future رح (raḥ) and the negation ما (ma) are separate words.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

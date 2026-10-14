@@ -1,32 +1,27 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  Ph = Phrase (fixed expression or idiom)
-  N = Noun (שם עצם): סֵפֶר, בַּיִת
-  V = Verb (פועל): כָּתַב, לִכְתֹּב
-  Adj = Adjective (שם תואר): גָּדוֹל, טוֹב
-  Adv = Adverb (תואר הפועל): כָּאן, תָּמִיד
-  Pron = Pronoun (כינוי גוף): אֲנִי, הוּא
-  Det = Determiner: זֶה, זוֹ
-  Art = Definite article: ה־
-  Num = Numeral (מספר): אֶחָד, שְׁלוֹשָׁה
-  Prep = Preposition (מילת יחס): בְּ־, לְ־, מִן
-  Conj = Conjunction (מילת חיבור): וְ־, אֲבָל
-  Int = Interrogative: מִי, מָה
-  Neg = Negation: לֹא, אַל
-  Aux = Auxiliary verb: הָיָה
-  Part = Particle: גַּם, רַק
-  Interj = Interjection: אוֹי
-  PropN = Proper noun: יִשְׂרָאֵל, דָּוִד
+  N = Noun (שם עצם): כלב, בית
+  V = Verb (פועל): לכתוב, לראות
+  Adj = Adjective (שם תואר): גדול, טוב
+  Adv = Adverb (תואר הפועל): כאן, תמיד
+  Pron = Pronoun (כינוי גוף): אני, הוא
+  Prep = Preposition (מילת יחס): על, מן
+  Conj = Conjunction (מילת חיבור): אבל, או
+  Num = Numeral (מספר): אחד, שלושה
+  Part = Particle (מילית): גם, רק
+  Interj = Interjection (מילת קריאה): אוי, וואו
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 כלב -> N m
 אישה -> N f
 לדבר -> V
-לראות -> V
 קטן -> Adj

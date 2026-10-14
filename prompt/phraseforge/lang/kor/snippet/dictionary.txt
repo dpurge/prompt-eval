@@ -1,0 +1,10 @@
+The phrase is the dictionary form as the Standard Korean Language Dictionary (표준국어대사전) lists it:
+- Verbs and adjectives: the stem + 다 (말하다, 작다, not 말했어요 or 작은); a 하다 verb as one word (주문하다).
+- Nouns: the noun without a particle (집, not 집에서 or 집이).
+- No polite or honorific endings; spacing as the dictionary has it.
+
+Examples (found in text -> phrase):
+말했어요 -> 말하다
+집에서 -> 집
+작은 -> 작다
+시작해요 -> 시작하다

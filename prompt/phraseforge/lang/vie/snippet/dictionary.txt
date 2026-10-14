@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Từ điển tiếng Việt (Hoàng Phê) lists it:
+- No classifier, tense or aspect marker attached (ăn, not đã ăn; sách, not cuốn sách).
+- A compound that is one entry stays together (học sinh, nói chuyện).
+- Adjectives: the base form without rất or quá (nhỏ, not rất nhỏ).
+- All tone marks kept.
+
+Examples (found in text -> phrase):
+đã ăn -> ăn
+cuốn sách -> sách
+rất nhỏ -> nhỏ
+những học sinh -> học sinh

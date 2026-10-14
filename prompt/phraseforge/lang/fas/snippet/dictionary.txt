@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Moʿin dictionary lists it:
+- Nouns: the bare singular (کتاب, not کتاب‌ها, کتابی or کتابم); no ezāfe and no attached pronoun.
+- Verbs: the infinitive (رفتن, not رفت or می‌روم); a compound verb as one phrase (کار کردن).
+- Adjectives: the base form (بزرگ, not بزرگ‌تر or بزرگ‌ترین).
+- Persian letters kept (پ چ ژ گ) and the zero-width non-joiner as the text has it.
+
+Examples (found in text -> phrase):
+کتاب‌ها -> کتاب
+می‌روم -> رفتن
+بزرگ‌تر -> بزرگ
+کتابش -> کتاب

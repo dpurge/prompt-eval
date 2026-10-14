@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Den Danske Ordbog lists it:
+- Nouns: the indefinite singular with en or et, which shows the gender (en hund, et hus), not hunden, hundene or hunde.
+- Verbs: the infinitive without at (tale, not at tale or taler).
+- Adjectives: the base form (lille, not små; stor, not store).
+- No article for a name. Spelling: æ, ø, å kept.
+
+Examples (found in text -> phrase):
+hundene -> en hund
+huset -> et hus
+talte -> tale
+store -> stor

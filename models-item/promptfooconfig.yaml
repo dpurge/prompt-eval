@@ -11,6 +11,7 @@ providers:
     label: ollama-gemma4-12b
     config:
       think: false
+      num_ctx: 4096
       # Equals phraseforge's ai.ModelsItemSchema (npm run check-sync verifies).
       format: &itemSchema
         type: object

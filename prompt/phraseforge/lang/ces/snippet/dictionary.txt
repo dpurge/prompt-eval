@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Slovník spisovného jazyka českého lists it:
+- Nouns: the nominative singular (pes, not psa or psi); the plural only for a plural-only noun (dveře).
+- Verbs: the infinitive (mluvit); se or si only for a verb that is always reflexive (smát se). The two aspects are separate headwords.
+- Adjectives: the nominative singular masculine (malý, not malé).
+- Spelling: háčky and čárky kept (ř, š, č, ž, ě, ů).
+
+Examples (found in text -> phrase):
+psa -> pes
+mluvila -> mluvit
+malé -> malý
+smál se -> smát se

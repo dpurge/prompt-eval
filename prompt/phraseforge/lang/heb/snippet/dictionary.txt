@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Even-Shoshan dictionary lists it:
+- Nouns: the singular as the dictionary lists it (כלב, אישה), not the plural or the construct form unless it is the headword (עיניים).
+- Verbs: the infinitive with ל (לכתוב), not the past, present or future form.
+- Adjectives: the masculine singular (גדול, not גדולה).
+- No attached prefixes (ה, ו, ב, ל, מ, ש, כ): not והכלב. Write the niqqud only if the lesson text has it.
+
+Examples (found in text -> phrase):
+הכלבים -> כלב
+כתבתי -> לכתוב
+גדולה -> גדול
+ובבית -> בית

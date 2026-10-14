@@ -1,0 +1,27 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (اِسْم): كِتَاب، بَيْت
+  V = Verb (فِعْل): كَتَب، راح
+  Adj = Adjective (صِفَة): كْبِير، حِلْو
+  Adv = Adverb (ظَرْف): هَلَّق، هُون
+  Pron = Pronoun (ضَمِير): أَنَا، هُوِّي
+  Prep = Preposition (حَرْف جَرّ): مِن، عَلَى
+  Conj = Conjunction (حَرْف عَطْف): وَ، بَسّ
+  Num = Numeral (عَدَد): تَلَاتَة، عَشَرَة
+  Part = Particle (أَدَاة): مَا، عَم
+  Interj = Interjection: آخ، يَا سَلَام
+  Ph = Fixed phrase or idiom
+
+Gender, after a noun (always lower case):
+  m = masculine
+  f = feminine
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Examples (phrase -> tags):
+كِتَاب -> N m
+مَدْرَسَة -> N f
+كَتَب -> V
+كْبِير -> Adj

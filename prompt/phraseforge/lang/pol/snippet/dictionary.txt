@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Słownik języka polskiego PWN lists it:
+- Nouns: the nominative singular (pies, kobieta, dziecko), not an oblique case or the plural unless it is plural-only (drzwi).
+- Verbs: the infinitive (mówić); się only for a verb that is always reflexive (śmiać się). The two aspects are separate headwords.
+- Adjectives: the masculine nominative singular (mały, not małe).
+- Spelling: ą ć ę ł ń ó ś ź ż kept.
+
+Examples (found in text -> phrase):
+psa -> pies
+mówiła -> mówić
+małe -> mały
+śmiał się -> śmiać się

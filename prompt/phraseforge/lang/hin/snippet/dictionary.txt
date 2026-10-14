@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Oxford Hindi-English Dictionary lists it:
+- Nouns: the direct singular (लड़का, not लड़के or लड़कों; लड़की).
+- Verbs: the infinitive in -ना (करना, not करता है or किया); a conjunct verb as one phrase (बात करना).
+- Adjectives: the masculine direct singular (बड़ा, not बड़ी or बड़े).
+- A postposition is a separate word, never attached to the noun.
+
+Examples (found in text -> phrase):
+लड़कों -> लड़का
+करती है -> करना
+बड़ी -> बड़ा
+घरों में -> घर

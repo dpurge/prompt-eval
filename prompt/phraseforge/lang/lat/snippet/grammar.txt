@@ -1,30 +1,29 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (nomen): rana, puer
+  V = Verb (verbum): amo, sum
+  Adj = Adjective (adiectivum): magnus, parvus
+  Adv = Adverb (adverbium): heri, bene
+  Pron = Pronoun (pronomen): ego, ille
+  Prep = Preposition (praepositio): in, cum
+  Conj = Conjunction (coniunctio): et, sed
+  Num = Numeral (numerale): duo, tres
+  Part = Particle (particula): non, -ne
+  Interj = Interjection (interiectio): heu, o
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
   n = neuter
 
-After verb: the conjugation 1, 2, 3 or 4; irreg for an irregular verb
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 rana -> N f
 puer -> N m
 templum -> N n
-amare -> V 1
-esse -> V irreg
+amo -> V
 magnus -> Adj

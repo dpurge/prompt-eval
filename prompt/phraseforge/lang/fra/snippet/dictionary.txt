@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Le Petit Robert lists it:
+- Nouns: the singular with le or la, which shows the gender (le chien, la maison); a noun starting with a vowel or a mute h takes un or une instead, because l' hides the gender (un ami, une école); the plural only for a plural-only noun (les gens).
+- Verbs: the infinitive (parler); se only for a verb that is always reflexive (se souvenir, not se laver).
+- Adjectives: the masculine singular (petit, not petite).
+- Spelling: accents, ç, œ kept; elisions and contractions resolved (du, des, l' -> the noun).
+
+Examples (found in text -> phrase):
+les chiens -> le chien
+elle parle -> parler
+petites -> petit
+l'école -> une école

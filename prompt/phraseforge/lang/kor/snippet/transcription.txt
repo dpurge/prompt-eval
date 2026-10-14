@@ -1,0 +1,10 @@
+Transcribe using the Revised Romanization of Korean, read the way a Korean speaker pronounces it: the sound, not the spelling, letter by letter.
+
+Vowels: ㅏ a, ㅐ ae, ㅑ ya, ㅒ yae, ㅓ eo, ㅔ e, ㅕ yeo, ㅖ ye, ㅗ o, ㅘ wa, ㅙ wae, ㅚ oe, ㅛ yo, ㅜ u, ㅝ wo, ㅞ we, ㅟ wi, ㅠ yu, ㅡ eu, ㅢ ui, ㅣ i.
+Consonants: ㄱ g (k at the end of a syllable), ㄲ kk, ㄴ n, ㄷ d (t at the end), ㄸ tt, ㄹ r before a vowel and l elsewhere, ㅁ m, ㅂ b (p at the end), ㅃ pp, ㅅ s, ㅆ ss, ㅇ nothing at the start and ng at the end, ㅈ j, ㅉ jj, ㅊ ch, ㅋ k, ㅌ t, ㅍ p, ㅎ h.
+
+Reading rules:
+- Write the sound changes: 학교 -> hakgyo, 합니다 -> hamnida, 신라 -> Silla, 좋아 -> joa, 같이 -> gachi.
+- No hyphens between syllables; separate words with a space as the text does.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case. A name is the family name and the given name, each capitalized: 김민수 -> Gim Minsu.
+- Use Latin punctuation only.

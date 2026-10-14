@@ -1,0 +1,10 @@
+The phrase is the dictionary form as lo Zingarelli lists it:
+- Nouns: the singular with the article that shows the gender: il or lo, la (il cane, lo studente, la casa); a noun starting with a vowel takes un or una instead, because l' hides the gender (un amico, un'amica); the plural only for a plural-only noun (i pantaloni).
+- Verbs: the infinitive (parlare); the reflexive ending -si only for a verb that is always reflexive (pentirsi, not lavarsi).
+- Adjectives: the masculine singular (piccolo, not piccola).
+
+Examples (found in text -> phrase):
+i cani -> il cane
+parlano -> parlare
+piccole -> piccolo
+gli amici -> un amico

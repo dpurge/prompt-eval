@@ -1,22 +1,20 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
-
-Tagalog has no grammatical gender and no articles: every noun is just N.
-After verb: nothing (irreg for an irregular verb)
-After adjective: nothing
+  N = Noun: bahay, aso
+  V = Verb: magsalita, kumain
+  Adj = Adjective: maliit, maganda
+  Adv = Adverb: kahapon, mabuti
+  Pron = Pronoun: ako, siya
+  Prep = Preposition: sa, para
+  Conj = Conjunction: at, pero
+  Num = Numeral: dalawa, tatlo
+  Part = Particle: na, ba, pa
+  Interj = Interjection: naku, aray
+  Ph = Fixed phrase or idiom
 
 Examples (phrase -> tags):
 bahay -> N
 magsalita -> V
 maliit -> Adj
+sa -> Prep

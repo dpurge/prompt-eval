@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Svenska Akademiens ordlista (SAOL) lists it:
+- Nouns: the indefinite singular with en or ett, which shows the gender (en hund, ett hus), not hunden, hundar or hundarna.
+- Verbs: the infinitive without att (tala, not att tala or talar).
+- Adjectives: the common-gender base form (liten, not litet or små).
+- Spelling: å ä ö kept.
+
+Examples (found in text -> phrase):
+hundarna -> en hund
+huset -> ett hus
+talade -> tala
+små -> liten

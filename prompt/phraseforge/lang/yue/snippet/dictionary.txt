@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Cantonese dictionary (粵典, words.hk) lists it:
+- No aspect marker, plural or measure word attached (食, not 食咗; 學生, not 學生哋; 書, not 一本書).
+- Keep the Cantonese word (冇, 嘅, 咗, 佢) and do not replace it with the Standard Chinese one.
+- A verb-object compound stays together (食飯); a word is usually 1-4 characters.
+- Use the script of the lesson (Traditional or Simplified) consistently.
+
+Examples (found in text -> phrase):
+食咗 -> 食
+學生哋 -> 學生
+一本書 -> 書
+食緊飯 -> 食飯

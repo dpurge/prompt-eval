@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Daijirin or Kōjien, kana and kanji as the lesson writes them lists it:
+- Verbs: the plain non-past form (話す, not 話しました or 話して); a noun + する verb as one word when it is listed (注文する).
+- i-adjectives: the dictionary form in -い (小さい, not 小さかった or 小さく).
+- na-adjectives: the stem without な (きれい, not きれいな).
+- Nouns: the noun without a particle (犬, not 犬が).
+
+Examples (found in text -> phrase):
+話しました -> 話す
+小さくない -> 小さい
+きれいな -> きれい
+犬が -> 犬

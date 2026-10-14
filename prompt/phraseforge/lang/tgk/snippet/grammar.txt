@@ -1,0 +1,20 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (исм): хона, китоб
+  V = Verb (феъл): гуфтан, рафтан
+  Adj = Adjective (сифат): калон, хуб
+  Adv = Adverb (зарф): имрӯз, ҳамеша
+  Pron = Pronoun (ҷонишин): ман, ӯ
+  Prep = Preposition (пешоянд): дар, аз
+  Conj = Conjunction (пайвандак): ва, аммо
+  Num = Numeral (шумора): ду, се
+  Part = Particle (ҳиссача): ҳам, низ
+  Interj = Interjection (нидо): оҳ, ай
+  Ph = Fixed phrase or idiom
+
+Examples (phrase -> tags):
+хона -> N
+гуфтан -> V
+калон -> Adj
+дар -> Prep

@@ -1,0 +1,11 @@
+The phrase is the dictionary form as DEX (Dicționarul explicativ al limbii române) lists it:
+- Nouns: the indefinite singular without the article (casă, not casa or case).
+- Verbs: the infinitive without a (vorbi, not a vorbi or vorbesc).
+- Adjectives: the masculine singular (mic, not mică).
+- Spelling: ă â î ș ț kept.
+
+Examples (found in text -> phrase):
+copiii -> copil
+vorbește -> vorbi
+mică -> mic
+casele -> casă

@@ -1,0 +1,10 @@
+The phrase is the dictionary form as Van Dale lists it:
+- Nouns: the singular with de or het, which shows the gender (de hond, het huis); the plural only for a plural-only noun (de ouders).
+- Verbs: the infinitive with a separable prefix attached (opstaan, not staat ... op); zich only for a verb that is always reflexive (zich vergissen).
+- Adjectives: the base form without -e (klein, not kleine).
+
+Examples (found in text -> phrase):
+de honden -> de hond
+stond ... op -> opstaan
+kleine -> klein
+vergiste zich -> zich vergissen

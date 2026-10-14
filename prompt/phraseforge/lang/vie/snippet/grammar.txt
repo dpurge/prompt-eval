@@ -1,24 +1,23 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (danh từ): chó, nhà
+  V = Verb (động từ): nói chuyện, ăn
+  Adj = Adjective (tính từ): nhỏ, tốt
+  Adv = Adverb (trạng từ): hôm nay, rất
+  Pron = Pronoun (đại từ): tôi, anh ấy
+  Prep = Preposition (giới từ): ở, với
+  Conj = Conjunction (liên từ): và, nhưng
+  Num = Numeral (số từ): hai, ba
+  Part = Particle (trợ từ): đã, sẽ, không
+  Interj = Interjection (thán từ): ôi, chà
+  Ph = Fixed phrase or idiom
 
-Vietnamese has no grammatical gender and no articles.
-After noun: cl and the classifier word, only if you are sure of it; otherwise nothing
-After verb: nothing
-After adjective: nothing
+After noun: the classifier word, only if you are sure of it
 
 Examples (phrase -> tags):
-chó -> N cl con
-nhà -> N cl cái
+chó -> N con
+nhà -> N căn
+sách -> N cuốn
 nói chuyện -> V
 nhỏ -> Adj

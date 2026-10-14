@@ -1,31 +1,28 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (nom): le chien, la maison
+  V = Verb (verbe): parler, finir
+  Adj = Adjective (adjectif): grand, petit
+  Adv = Adverb (adverbe): hier, bien
+  Pron = Pronoun (pronom): je, elle
+  Prep = Preposition (préposition): dans, avec
+  Conj = Conjunction (conjonction): et, mais
+  Num = Numeral (numéral): deux, trois
+  Part = Particle (particule): ne, pas
+  Interj = Interjection (interjection): ah, aïe
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
-- Number: pl only for a plural form listed on its own
 
-After verb: the group er, ir or re; irreg for an irregular verb
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 le chien -> N m
 la maison -> N f
-les enfants -> N m pl
-parler -> V er
-prendre -> V re irreg
-être -> V irreg
+les gens -> N m pl
+parler -> V
 petit -> Adj

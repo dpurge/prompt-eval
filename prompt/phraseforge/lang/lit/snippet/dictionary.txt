@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Dabartinės lietuvių kalbos žodynas lists it:
+- Nouns: the nominative singular (šuo, moteris), not an oblique case or the plural unless it is plural-only (durys).
+- Verbs: the infinitive in -ti (kalbėti); -s only for a verb that is always reflexive (juoktis).
+- Adjectives: the masculine nominative singular (didelis, not didelė).
+- Spelling: ą č ę ė į š ų ū ž kept.
+
+Examples (found in text -> phrase):
+šuns -> šuo
+kalbėjo -> kalbėti
+didelė -> didelis
+moterys -> moteris

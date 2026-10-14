@@ -1,0 +1,94 @@
+description: Review one models item (a model phrase) and propose corrections
+
+# Same call shape as phraseforge's review_models call: one user message
+# (prompt/phraseforge/default/system/review-models.txt, synced to the embedded
+# default by scripts/sync-prompts.js), the reply schema sent as Ollama's
+# "format". num_ctx equals the purpose's numCtx and the schema equals
+# ai.ReviewModelsSchema (npm run check-sync verifies both). Change the provider
+# below to review with a more capable model.
+prompts:
+  - file://../prompt/phraseforge/default/system/review-models.txt
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      num_ctx: 8192
+      format: &schema
+        type: object
+        required:
+          - phrase
+          - transcription
+          - translations
+        properties:
+          phrase:
+            type: object
+            required:
+              - ok
+              - suggestion
+              - reason
+            properties:
+              ok:
+                type: boolean
+              suggestion:
+                type: string
+              reason:
+                type: string
+          transcription:
+            type: object
+            required:
+              - ok
+              - suggestion
+              - reason
+            properties:
+              ok:
+                type: boolean
+              suggestion:
+                type: string
+              reason:
+                type: string
+          translations:
+            type: array
+            items:
+              type: object
+              required:
+                - locale
+                - ok
+                - suggestion
+                - reason
+              properties:
+                locale:
+                  type: string
+                ok:
+                  type: boolean
+                suggestion:
+                  type: string
+                reason:
+                  type: string
+
+defaultTest:
+  assert:
+    - type: is-json
+      value: *schema
+
+tests:
+  - description: deu-model-with-an-explanation-in-the-translation
+    vars:
+      sourceLanguage: German
+      phrase: "Ich warte auf ..."
+      transcription: "none"
+      translations: |-
+        - en: I am waiting for ...; (a verb that takes the accusative)
+        - pl: Czekam na ...
+      transcriptionPrompt: ""
+
+  - description: deu-model-that-is-correct
+    vars:
+      sourceLanguage: German
+      phrase: "Wenn ich Zeit hätte, ..."
+      transcription: "none"
+      translations: |-
+        - en: If I had time, ...
+        - pl: Gdybym miał czas, ...
+      transcriptionPrompt: ""

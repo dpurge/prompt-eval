@@ -1,0 +1,10 @@
+The phrase is the dictionary form as the Royal Institute Dictionary (พจนานุกรม ฉบับราชบัณฑิตยสถาน) lists it:
+- No classifier, tense marker or particle attached (กิน, not กินแล้ว; หนังสือ, not หนังสือสองเล่ม).
+- Words are not separated in the text: cut at the word boundaries of the dictionary; a compound that is one entry stays together (โรงเรียน).
+- Adjectives: the base form without มาก or ที่สุด (เล็ก, not เล็กที่สุด).
+
+Examples (found in text -> phrase):
+กินแล้ว -> กิน
+หนังสือสองเล่ม -> หนังสือ
+เล็กที่สุด -> เล็ก
+โรงเรียนใหญ่ -> โรงเรียน

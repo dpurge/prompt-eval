@@ -1,31 +1,27 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (zelfstandig naamwoord): de hond, het huis
+  V = Verb (werkwoord): praten, zien
+  Adj = Adjective (bijvoeglijk naamwoord): klein, goed
+  Adv = Adverb (bijwoord): gisteren, goed
+  Pron = Pronoun (voornaamwoord): ik, zij
+  Prep = Preposition (voorzetsel): in, met
+  Conj = Conjunction (voegwoord): en, maar
+  Num = Numeral (telwoord): twee, drie
+  Part = Particle (partikel): niet, toch
+  Interj = Interjection (tussenwerpsel): ach, au
+  Ph = Fixed phrase or idiom
 
-After noun: the article of the word
-  de = common gender
-  het = neuter
-- Number: pl only for a plural form listed on its own
+Gender, after a noun (always lower case):
+  c = common (de)
+  n = neuter (het)
 
-After verb:
-  sep = separable prefix
-  irreg = irregular
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
-de hond -> N de
-het huis -> N het
+de hond -> N c
+het huis -> N n
 praten -> V
-opstaan -> V sep
-zien -> V irreg
 klein -> Adj

@@ -1,49 +1,29 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
-- Part of speech (always capitalized, always marked):
-  Ph = Phrase (fixed expression or idiom)
-  N = Noun (ὄνομα): λόγος
-  V = Verb (ῥῆμα): λύω
-  Adj = Adjective (ἐπίθετον): ἀγαθός
+Part of speech (always capitalized):
+  N = Noun (ὄνομα): ὁ λόγος, ἡ οἰκία
+  V = Verb (ῥῆμα): λύω, λέγω
+  Adj = Adjective (ἐπίθετον): ἀγαθός, μικρός
   Adv = Adverb (ἐπίρρημα): εὖ, νῦν
   Pron = Pronoun (ἀντωνυμία): ἐγώ, σύ
-  Art = Article (ἄρθρον): ὁ, ἡ, τό
-  Det = Determiner (Demonstrative or other determinative uses)
-  Num = Numeral (ἀριθμητικόν): δύο, τρεῖς
   Prep = Preposition (πρόθεσις): ἐν, διά
   Conj = Conjunction (σύνδεσμος): καί, ἀλλά
-  Int = Interrogative: τίς, τί
-  Neg = Negation: οὐ, μή
-  Part = Particle: γάρ, δή, μέν, ἄν
-  Interj = Interjection: φεῦ
-  PropN = Proper noun: Ἀθήναι, Σωκράτης
+  Num = Numeral (ἀριθμητικόν): δύο, τρεῖς
+  Part = Particle (μόριον): γάρ, δέ, μέν, ἄν
+  Interj = Interjection (ἐπιφώνημα): φεῦ, ὦ
+  Ph = Fixed phrase or idiom
 
-- Case (always lower case, marked only if not nominative)
-  nom = nominative
-  gen = genetive
-  dat = dative
-  acc = accusative
-  voc = vocative
-
-- Number (always lower case, marked only if not singular)
-  sg = singular
-  du = dual
-  pl = plural
-
-- Gender (always lower case, marked only if article is not visible)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
   n = neuter
 
-- Degree (always lower case, marked only if not positive)
-  pos = positive
-  comp = comparative
-  sup = superlative
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
-ὁ κύων -> N
-ἡ οἰκία -> N
-τὸ παιδίον -> N
-λέγω -> V
-ὁράω -> V
-μικρός -> Adj
+ὁ λόγος -> N m
+ἡ οἰκία -> N f
+τὸ παιδίον -> N n
+λύω -> V
+ἀγαθός -> Adj

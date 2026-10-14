@@ -1,25 +1,20 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  Ph = fixed phrase or idiom
-  N = Noun: کتاب, خانه
-  V = Verb: رفتن, خوردن
-  Adj = Adjective: بزرگ, خوب
-  Adv = Adverb: امروز, همیشه
-  Pron = Pronoun: من, او
-  Det = Determiner: این, آن
-  Num = Numeral: یک, سه
-  Prep = Preposition: از, به, در
-  Conj = Conjunction: و, اما
-  Int = Interrogative: چه, کی
-  Neg = Negation: نه, نـ (verbal negation)
-  Aux = Auxiliary verb: بودن, شدن
-  Part = Particle: را, هم
-  Interj = Interjection: آه, وای
-  PropN = Proper noun: تهران
+  N = Noun (اسم): کتاب، خانه
+  V = Verb (فعل): رفتن، خوردن
+  Adj = Adjective (صفت): بزرگ، خوب
+  Adv = Adverb (قید): امروز، همیشه
+  Pron = Pronoun (ضمیر): من، او
+  Prep = Preposition (حرف اضافه): از، به، در
+  Conj = Conjunction (حرف ربط): و، اما
+  Num = Numeral (عدد): یک، سه
+  Part = Particle (حرف): را، هم
+  Interj = Interjection (صوت): آه، وای
+  Ph = Fixed phrase or idiom
 
 Examples (phrase -> tags):
 خانه -> N
 دیدن -> V
-بودن -> Aux
 کوچک -> Adj
+امروز -> Adv

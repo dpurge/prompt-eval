@@ -1,0 +1,10 @@
+The phrase is the dictionary form as the UP Diksiyonaryong Filipino lists it:
+- Nouns: the root word without ang, ng, sa or mga (bahay, not ang bahay or mga bahay).
+- Verbs: the infinitive with its affix (magsalita, kumain), not a conjugated form (nagsasalita, kumakain).
+- Adjectives: the base form (maliit, not napakaliit).
+
+Examples (found in text -> phrase):
+mga bahay -> bahay
+nagsasalita -> magsalita
+kumakain -> kumain
+napakaliit -> maliit

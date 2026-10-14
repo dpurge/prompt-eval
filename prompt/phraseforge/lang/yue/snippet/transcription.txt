@@ -1,0 +1,11 @@
+Transcribe using Jyutping with a tone number from 1 to 6 after every syllable, read the way a Cantonese speaker says it aloud (the Cantonese reading, never Mandarin Pinyin).
+
+Initials: b p m f d t n l g k ng h gw kw w z c s j.
+Finals: aa aai aau aam aan aang aap aat aak, ai au am an ang ap at ak, e ei eu em eng ep ek, i iu im in ing ip it ik, o oi ou on ong ot ok, oe oeng oek eoi eon eot, u ui un ung ut uk, yu yun yut, m ng.
+Tones: 1 high level, 2 high rising, 3 mid level, 4 low falling, 5 low rising, 6 low level.
+
+Reading rules:
+- Write the tone number straight after the syllable and separate the syllables with a space: 你好 -> nei5 hou2.
+- Write the Cantonese reading of the character or word, also for colloquial words: 冇 -> mou5, 嘅 -> ge3.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

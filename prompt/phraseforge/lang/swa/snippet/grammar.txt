@@ -1,22 +1,20 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
-
-Do not tag the noun class: every noun is just N.
-After verb: nothing
-After adjective: nothing
+  N = Noun: mtoto, kitabu
+  V = Verb: kusema, kuona
+  Adj = Adjective: mkubwa, mzuri
+  Adv = Adverb: leo, jana
+  Pron = Pronoun: mimi, yeye
+  Prep = Preposition: kwa, katika
+  Conj = Conjunction: na, lakini
+  Num = Numeral: mbili, tatu
+  Part = Particle: si, ni
+  Interj = Interjection: lo, ee
+  Ph = Fixed phrase or idiom
 
 Examples (phrase -> tags):
 mtoto -> N
 kusema -> V
 mkubwa -> Adj
+leo -> Adv

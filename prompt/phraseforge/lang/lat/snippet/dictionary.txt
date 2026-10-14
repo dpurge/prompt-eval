@@ -1,0 +1,11 @@
+The phrase is the dictionary form as Lewis and Short lists it:
+- Nouns: the nominative singular (rana, puer, templum), not an oblique case or the plural.
+- Verbs: the 1st person singular present active indicative (amo, vitupero), not the infinitive or the perfect; a deponent verb in its passive form (loquor).
+- Adjectives: the masculine nominative singular (magnus, parvus).
+- Macrons are not required.
+
+Examples (found in text -> phrase):
+ranae -> rana
+amant -> amo
+parvam -> parvus
+pueri -> puer

@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Oxford English Dictionary lists it:
+- Nouns: the singular without an article (dog, not dogs or a dog; child, not children).
+- Verbs: the base form without to (speak, not speaks, spoke or to speak); a phrasal verb with its particle (give up, look after).
+- Adjectives and adverbs: the base form (small, not smaller; quickly).
+- Lower case, except for names.
+
+Examples (found in text -> phrase):
+dogs -> dog
+gave up -> give up
+smaller -> small
+children -> child

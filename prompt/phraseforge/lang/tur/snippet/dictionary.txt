@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the TDK Güncel Türkçe Sözlük lists it:
+- Nouns: the nominative singular without case, plural or possessive endings (ev, not evlerimizde).
+- Verbs: the infinitive in -mak or -mek (konuşmak, not konuştu).
+- Adjectives: the base form (küçük, not küçüğü).
+- Spelling: ç ğ ı İ ö ş ü kept; I and İ are different letters.
+
+Examples (found in text -> phrase):
+evlerimizde -> ev
+konuştum -> konuşmak
+küçükler -> küçük
+imzalandı -> imzalamak

@@ -1,0 +1,28 @@
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
+
+Part of speech (always capitalized):
+  N = Noun (संज्ञा): लड़का, घर
+  V = Verb (क्रिया): करना, जाना
+  Adj = Adjective (विशेषण): बड़ा, अच्छा
+  Adv = Adverb (क्रियाविशेषण): आज, यहाँ
+  Pron = Pronoun (सर्वनाम): मैं, वह
+  Post = Postposition (संबंधबोधक): में, पर, का
+  Conj = Conjunction (समुच्चयबोधक): और, लेकिन
+  Num = Numeral (संख्यावाचक): एक, तीन
+  Part = Particle (निपात): ही, भी
+  Interj = Interjection (विस्मयादिबोधक): अरे, वाह
+  Ph = Fixed phrase or idiom
+
+Gender, after a noun (always lower case):
+  m = masculine
+  f = feminine
+
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
+
+Examples (phrase -> tags):
+लड़का -> N m
+लड़की -> N f
+करना -> V
+बड़ा -> Adj
+में -> Post

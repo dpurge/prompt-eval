@@ -1,0 +1,11 @@
+The phrase is the dictionary form as the Mongolian explanatory dictionary lists it:
+- Nouns: the nominative singular without case, plural or possessive endings (гэр, not гэрт or гэрүүд).
+- Verbs: the form in -х (бичих), not бичсэн or бичнэ.
+- Adjectives: the base form (том).
+- Cyrillic as the lesson writes it, with ө and ү.
+
+Examples (found in text -> phrase):
+гэрүүдэд -> гэр
+бичсэн -> бичих
+хүүхдүүд -> хүүхэд
+томоор -> том

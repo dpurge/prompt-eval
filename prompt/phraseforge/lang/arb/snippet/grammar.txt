@@ -4,7 +4,6 @@ Part of speech (always capitalized):
   Ph = phrase, fixed expression or idiom
   N = noun (اِسْم): كِتَابٌ
   V = verb (فِعْل): كَتَبَ
-  P = particle (حَرْف): فِي, مِنْ
   Adj = adjective (صِفَة / نَعْت): كَبِيرٌ
   Adv = adverb (ظَرْف): أَمْسِ, هُنَا
   Pron = pronoun (ضَمِير): هُوَ, أَنَا
@@ -24,7 +23,6 @@ Part of speech (always capitalized):
   IntAdv = Interrogative adverb: أَيْنَ، مَتَى، كَيْفَ
   Aux = Auxiliary verb: كَانَ (in auxiliary use)
   Modal = Modal: يَجِبُ، يُمْكِنُ
-  Part = Participial form: كَاتِبٌ، مَكْتُوبٌ
   Ger = Verbal noun (maṣdar): كِتَابَةٌ
   Art = Definite article: الـ
   Poss = Possessive marker: ـهُ، ـهَا (possessive suffixes)
@@ -38,8 +36,8 @@ Part of speech (always capitalized):
   pl = plural
   du = dual
 
-Core tags = Ph, N, V, Adj, Adv, Pron, P, Conj, Num, Int, Neg
-Optional specialized tags (prefer to core tags): PropN, Dem, Rel, IntP, IntN, IntAdv, Art, Aux, 
+Core tags = Ph, N, V, Adj, Adv, Pron, Prep, Conj, Num, Part, Int, Neg
+Optional specialized tags (prefer to core tags): PropN, Dem, Rel, IntP, IntN, IntAdv, Art, Aux, Modal, Ger, Poss
 
 Tags after:
 - noun: gender, number

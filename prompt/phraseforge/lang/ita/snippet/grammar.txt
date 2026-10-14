@@ -1,30 +1,28 @@
-Grammar tags is an ordered string of space-separated tags:
+Grammar tags is an ordered string of space-separated tags, written exactly as listed (tags are case sensitive):
 
 Part of speech (always capitalized):
-  N = noun
-  V = verb
-  Adj = adjective
-  Adv = adverb
-  Pron = pronoun
-  Prep = preposition
-  Conj = conjunction
-  Num = numeral
-  Part = particle
-  Phrase = fixed phrase or idiom
+  N = Noun (nome): il cane, la casa
+  V = Verb (verbo): parlare, vedere
+  Adj = Adjective (aggettivo): grande, piccolo
+  Adv = Adverb (avverbio): ieri, bene
+  Pron = Pronoun (pronome): io, lei
+  Prep = Preposition (preposizione): di, con
+  Conj = Conjunction (congiunzione): e, ma
+  Num = Numeral (numerale): due, tre
+  Part = Particle (particella): ci, ne
+  Interj = Interjection (interiezione): ah, ahimè
+  Ph = Fixed phrase or idiom
 
-After noun:
-- Gender (always lower case)
+Gender, after a noun (always lower case):
   m = masculine
   f = feminine
-- Number: pl only for a plural form listed on its own
 
-After verb: the class are, ere or ire; irreg for an irregular verb
-After adjective: nothing
+Number, after a noun, only for a plural form listed on its own (always lower case):
+  pl = plural
 
 Examples (phrase -> tags):
 il cane -> N m
 la casa -> N f
-gli amici -> N m pl
-parlare -> V are
-vedere -> V ere irreg
+i pantaloni -> N m pl
+parlare -> V
 piccolo -> Adj

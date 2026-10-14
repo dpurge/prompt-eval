@@ -1,0 +1,11 @@
+Transcribe using the Royal Thai General System of Transcription (RTGS), read the way a Thai speaker says it aloud. Write no tone marks and no diacritics, and write long and short vowels alike.
+
+Initial consonants: ก k, ข ฃ ค ฅ ฆ kh, ง ng, จ ch, ฉ ช ฌ ch, ซ ศ ษ ส s, ญ ย y, ฎ ด d, ฏ ต t, ฐ ฑ ฒ ถ ท ธ th, ณ น n, บ b, ป p, ผ พ ภ ph, ฝ ฟ f, ม m, ร r, ล ฬ l, ว w, ห ฮ h, อ nothing.
+Final consonants: ก ข ค ฆ k; ด จ ช ซ ฎ ฏ ฐ ฑ ฒ ต ถ ท ธ ศ ษ ส t; บ ป พ ฟ ภ p; ง ng; น ญ ณ ร ล ฬ n; ม m; ย i; ว o.
+Vowels: อะ อา a, อิ อี i, อึ อื ue, อุ อู u, เอะ เอ e, แอะ แอ ae, โอะ โอ o, เอาะ ออ o, เออ oe, เอีย ia, เอือ uea, อัว ua, ไอ ใอ ai, เอา ao, อำ am.
+
+Reading rules:
+- Thai is written without spaces between words: separate the words with a space in the transcription.
+- Write the pronunciation, not the spelling: ทราย -> sai, จริง -> chin.
+- Capitalize proper nouns and the first word of a complete sentence; a single word or a fragment is lower case.
+- Use Latin punctuation only.

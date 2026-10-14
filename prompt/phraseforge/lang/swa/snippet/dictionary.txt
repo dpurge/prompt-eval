@@ -1,0 +1,10 @@
+The phrase is the dictionary form as the Kamusi ya Kiswahili Sanifu lists it:
+- Nouns: the singular with its prefix (mtoto, kitabu), not the plural (watoto, vitabu).
+- Verbs: the infinitive with ku- (kusema, kuona), not a form with a subject or tense prefix (alisema, anaona).
+- Adjectives: the form with the class 1 prefix (mkubwa, mzuri), not the form of another noun class (kikubwa).
+
+Examples (found in text -> phrase):
+watoto -> mtoto
+alisema -> kusema
+kikubwa -> mkubwa
+vitabu -> kitabu

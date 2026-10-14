@@ -33,8 +33,8 @@ const promptFile = (name) => path.join(promptDefaultDir, "system", `${name}.txt`
 // One entry per item suite: its prompt, the Go reply schema it must match and
 // the Helm values key holding the deployed prompt.
 const SUITES = [
-  { dir: "vocabulary-translation", promptName: "generate-vocabulary-item", goSchema: "VocabularyItemSchema", helmKey: "vocabularyItem" },
-  { dir: "models-item", promptName: "generate-models-item", goSchema: "ModelsItemSchema", helmKey: "modelsItem" },
+  { dir: "vocabulary-translation", promptName: "generate-vocabulary-item", goSchema: "VocabularyItemSchema", helmKey: "vocabularyItem", goField: "VocabularyItem" },
+  { dir: "models-item", promptName: "generate-models-item", goSchema: "ModelsItemSchema", helmKey: "modelsItem", goField: "ModelsItem" },
 ];
 
 const SCHEMA_ONLY = [
@@ -44,6 +44,7 @@ const SCHEMA_ONLY = [
   { config: "review-vocabulary/promptfooconfig.yaml", goSchema: "ReviewVocabularySchema", goFile: "review.go" },
   { config: "review-transcription/promptfooconfig.yaml", goSchema: "ReviewTranscriptionSchema", goFile: "review_text.go" },
   { config: "review-translation/promptfooconfig.yaml", goSchema: "ReviewTranslationSchema", goFile: "review_text.go" },
+  { config: "review-models/promptfooconfig.yaml", goSchema: "ReviewModelsSchema", goFile: "review_models.go" },
 ];
 
 // Purposes called through ai.Service.Generate: the system prompt is
@@ -145,6 +146,9 @@ if (check) {
   for (const suite of SUITES) {
     checkPrompt(suite.promptName, helm && helm[suite.helmKey], suite.helmKey);
     checkSchema(`${suite.dir}/promptfooconfig.yaml`, suite.goSchema);
+    const suiteNumCtx = yaml.parse(fs.readFileSync(path.join(root, suite.dir, "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx ?? 0;
+    const expectedNumCtx = (helm && helm[suite.helmKey] && helm[suite.helmKey].numCtx) ?? goNumCtx(configGo, suite.goField);
+    if (suiteNumCtx !== expectedNumCtx) problems.push(`${suite.dir}/promptfooconfig.yaml num_ctx is ${suiteNumCtx}, the configured value is ${expectedNumCtx}`);
   }
 
   for (const purpose of GENERATE_PURPOSES) {
@@ -184,6 +188,12 @@ if (check) {
   const reviewReviewTranslationNumCtx = yaml.parse(fs.readFileSync(path.join(root, "review-translation", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
   const goReviewReviewTranslationNumCtx = goNumCtx(configGo, "ReviewTranslation");
   if (reviewReviewTranslationNumCtx !== goReviewReviewTranslationNumCtx) problems.push(`review-translation/promptfooconfig.yaml num_ctx is ${reviewReviewTranslationNumCtx}, the Go default is ${goReviewReviewTranslationNumCtx}`);
+
+  // The review-models purpose likewise.
+  checkPrompt("review-models", helm && helm.reviewModels, "reviewModels");
+  const reviewModelsNumCtx = yaml.parse(fs.readFileSync(path.join(root, "review-models", "promptfooconfig.yaml"), "utf8")).providers[0].config.num_ctx;
+  const goReviewModelsNumCtx = goNumCtx(configGo, "ReviewModels");
+  if (reviewModelsNumCtx !== goReviewModelsNumCtx) problems.push(`review-models/promptfooconfig.yaml num_ctx is ${reviewModelsNumCtx}, the Go default is ${goReviewModelsNumCtx}`);
 
   // The follow-up turn the correction suites send must be the one phraseforge sends.
   const retryGo = path.join(phraseforgeDir, "internal", "ai", "retry.go");
