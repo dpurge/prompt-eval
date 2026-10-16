@@ -1,0 +1,22 @@
+# How prompt-eval hands the assistant's prompts to the assistant. The format
+# is generic: see README.md, "Applications".
+name: assistant
+promptDir: prompt/assistant
+target:
+  root: ../k8s-lab/assistant # the application's directory; ASSISTANT_DIR overrides it
+  env: ASSISTANT_DIR
+  prompts: internal/workflow/prompts # where the prompt tree is copied, relative to root
+template: step.system.txt
+axes:
+  - { dir: lang, file: rules.txt, placeholder: languageRules, selector: language }
+  - { dir: output, file: rules.txt, placeholder: outputRules, selector: output }
+files:
+  # Hand-written render cases that the assistant's Go renderer is tested against too.
+  - { from: vectors/template-render.json, to: internal/workflow/testdata/prompt-eval/render-vectors.json }
+  # The evaluation cases and the reply schema of each state they use. The assistant's tests
+  # check that the cases are exactly what its engine sends and that the schemas are the ones it builds.
+  - { from: assistant-step/cases.yaml, to: internal/workflow/testdata/prompt-eval/cases.yaml }
+  - { from: assistant-step/schemas/intake.json, to: internal/workflow/testdata/prompt-eval/schemas/intake.json }
+  - { from: assistant-step/schemas/plan.json, to: internal/workflow/testdata/prompt-eval/schemas/plan.json }
+  - { from: assistant-step/schemas/assess.json, to: internal/workflow/testdata/prompt-eval/schemas/assess.json }
+  - { from: assistant-step/schemas/teach.json, to: internal/workflow/testdata/prompt-eval/schemas/teach.json }

@@ -1,0 +1,26 @@
+description: One controller step of the assistant's workflow engine
+
+# Same call shape as the engine's: a system message (the controller prompt with
+# the language and output snippets for the case, prompt/assistant/, synced to
+# the assistant by npm run sync-assistant) and one user message holding the
+# step input as JSON. No Ollama "format" is sent: promptfoo fixes it per
+# provider, not per case, so this suite measures how well a model follows the
+# prompt unaided. The assistant's engine refuses replies that break the schema
+# and retries, so a model that fails here may still succeed there. Run one case
+# with SMOKE=1 against a local model; select cases with CASES=id,id.
+prompts:
+  - file://../lib/promptfoo-chat-prompt.js
+
+providers:
+  - id: ollama:chat:gemma4:12b
+    label: ollama-gemma4-12b
+    config:
+      think: false
+      num_ctx: 16384
+
+defaultTest:
+  assert:
+    - type: javascript
+      value: file://../lib/promptfoo-assert-reply.js
+
+tests: file://generate-tests.js

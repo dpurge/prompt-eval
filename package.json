@@ -7,6 +7,11 @@
     "test": "node --test test/",
     "check-sync": "node scripts/sync-prompts.js --check",
     "sync-prompts": "node scripts/sync-prompts.js",
+    "sync-assistant": "node scripts/sync-app.js assistant",
+    "check-sync-assistant": "node scripts/sync-app.js assistant --check",
+    "assistant-step": "promptfoo eval -c assistant-step/promptfooconfig.yaml",
+    "assistant-step:smoke": "SMOKE=1 promptfoo eval -c assistant-step/promptfooconfig.yaml",
+    "assistant-step:validate": "promptfoo validate config -c assistant-step/promptfooconfig.yaml",
     "vocabulary-translation": "promptfoo eval -c vocabulary-translation/promptfooconfig.yaml",
     "vocabulary-translation:smoke": "SMOKE=1 promptfoo eval -c vocabulary-translation/promptfooconfig.yaml",
     "models-item": "promptfoo eval -c models-item/promptfooconfig.yaml",
@@ -42,6 +47,7 @@
   },
   "type": "commonjs",
   "devDependencies": {
+    "ajv": "^8.20.0",
     "promptfoo": "^0.123.1",
     "yaml": "^2.9.1"
   }
